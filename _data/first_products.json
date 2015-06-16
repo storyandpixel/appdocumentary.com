@@ -1,0 +1,53 @@
+[
+  {
+    "label": "Download",
+    "class": "digital-download",
+    "buttons_class": "double",
+    "buttons": [
+      {
+        "label": "Deluxe Edition",
+        "price": "25",
+        "product_id": 68230909
+      },
+      {
+        "label": "Film Only",
+        "price": "15",
+        "product_id": 68230549
+      }
+    ],
+    "description": "Download the film in DRM-free, high quality 1080p. Deluxe edition includes director commentary."
+  },
+  {
+    "label": "DVD",
+    "class": "dvd",
+    "buttons": [
+      {
+        "label": "Deluxe Edition",
+        "price": "30"
+      }
+    ],
+    "description": "Get a DVD of the deluxe edition of the film, which includes director commentary."
+  },
+  {
+    "label": "Blu-ray",
+    "class": "blu-ray",
+    "buttons": [
+      {
+        "label": "Deluxe Edition",
+        "price": "35"
+      }
+    ],
+    "description": "Get a Blu-ray of the deluxe edition of the film, which includes director commentary."
+  },
+  {
+    "label": "Fan Pack",
+    "class": "fan-pack",
+    "buttons": [
+      {
+        "label": "Film + Shirt + Poster",
+        "price": "75"
+      }
+    ],
+    "description": "Get the deluxe edition of the film in your choice of digital download, DVD, or Blu-ray, plus a t-shirt, and a poster."
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "name": "App Documentary Website",
+  "version": "1.0.0",
+  "authors": [
+    "Jedidiah Hurt <jed@storyandpixel.com>"
+  ],
+  "main": "_assets/javascripts/app.js",
+  "license": "MIT",
+  "homepage": "http://appdocumentary.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.inview": "https://github.com/zuk/jquery.inview.git",
+    "walkway": "https://github.com/kad3nce/walkway.git#2a0ec0513543f92c52b49637be52a5440b6146a9",
+    "bootstrap-sass": "~3.3.4",
+    "font-awesome": "~4.3.0",
+    "magnific-popup": "~1.0.0",
+    "livereload": "~2.2.1",
+    "modular-scale": "~2.0.7"
+  }
+}

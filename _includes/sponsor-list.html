@@ -1,0 +1,11 @@
+<p class="lead">
+  Join
+  <span class="sponsor-list">
+    {% for sponsor in sponsors %}
+      {% if sponsor.link %}
+        <a href="{{ sponsor.link }}">{{ sponsor.name }}</a>,
+      {% endif %}
+    {% endfor %}
+    and more.
+  </span>
+</p>

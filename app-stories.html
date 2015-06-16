@@ -1,0 +1,65 @@
+---
+layout: page
+title: App Stories
+---
+
+<div class="jumbotron jumbotron-small app-stories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>App Stories</h1>
+        <p>
+          One of our favorite things is hearing stories of how apps have affected peoples' lives. Here are some we've collected.
+        </p>
+        <p>
+          Add your story by tweeting a link to it with the hashtag <a href="https://twitter.com/search?q=%23thehumanstory&src=typd"><b>#thehumanstory</b></a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div> <!-- /container -->
+
+<div class="container">
+  <div class="row">
+    {% for app_story in site.data.app_stories %}
+      <div class="app-story col-md-6">
+        <h2>
+          <a href="{{ app_story.url }}">
+            {{ app_story.title }}
+            <small>
+              by 
+              {{ app_story.author }}
+            </small>
+          </a>
+        </h2>
+        <p>
+          <span class="badge">
+            {{ app_story.vote_count }}
+          </span>
+            {% if app_story.vote_count == 1 %}
+              retweet
+            {% else %}
+              retweets
+            {% endif %}
+            &nbsp;
+          <a href="{{ app_story.vote_link }}" class="btn btn-primary btn-xs pull-right">Retweet this story</a>
+        </p>
+        <p class="app-story-excerpt">
+          <span>
+            {{ app_story.excerpt }}
+          </span>
+          <a href="{{ app_story.url }}">
+            read the rest
+          </a>
+        </p>
+        <!-- <p> -->
+        <!--   {% for vote in app_story.app_story_voters %} -->
+        <!--   <a href="{{ vote.vote_url }}" class="img" data&#45;toggle="tooltip" title="@{{ vote.screen_name }}"> -->
+        <!--     <img class="twitter&#45;avatar" src="{{ vote.avatar_url }}"> -->
+        <!--   </a> -->
+        <!--   {% endfor %} -->
+        <!-- </p> -->
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.products {
+  margin-top: 11em;
+  margin-bottom: 11em;
+}
+.product {
+  padding-left: 40px;
+  padding-right: 40px;
+  p { font-size: 88%; }
+}
+// .product-title {
+//   text-align: center;
+// }
+.action-button {
+  margin-bottom: 0.5em;
+  .btn {
+    @include btn-styles($btn-default-bg);
+  }
+  .fa { margin-right: 5px }
+}
+.product-variation {
+  cursor: pointer;
+}
+.product-display {
+  border-radius: 50%;
+  position: relative;
+}
+$product-colors: #fc4349 #35cb60 #1f95c1 #ad51a3 #f27e18 #fecb57;
+@for $index from 1 through length($product-colors) {
+  $color: nth($product-colors, $index);
+  .product:nth-child(#{$index}) .product-display {
+    border: 3px solid $color;
+    border-radius: 50%;
+  }
+}
+.product-icon.dvd, .product-icon.blu-ray {
+  top: 6px;
+}
+
+.product-variant {
+  margin-top: 0;
+}
+.product-image {
+  width: 100%;
+}
+.product-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

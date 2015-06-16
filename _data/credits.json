@@ -1,0 +1,57 @@
+{
+  "founders": [
+    {
+      "name": "Jake Schumacher",
+      "title": "Director & Executive Producer",
+      "link": "https://twitter.com/prevailingcity",
+      "image": "/images/jake-schumacher.jpg",
+      "blurb": "Whether it’s in woodworking or digital creation, Jake is passionate about making things that will outlive him. Paired with his fascination for story, humanity, and technology, Jake is always coming up with a terrible idea to make room for the good ones."
+    },
+    {
+      "name": "Jedidiah Hurt",
+      "title": "Director & Executive Producer",
+      "link": "https://twitter.com/jedhurt",
+      "image": "/images/jedidiah-hurt.jpg",
+      "blurb": "A habitual and thoughtful creator, Jed’s attention to detail and his eye for excellence have served him well&mdash;whether he’s designing and developing web apps for large national corporations or launching an indie production company to make an important documentary."
+    },
+    {
+      "name": "Adam Lisagor",
+      "title": "Executive Producer",
+      "link": "https://twitter.com/lonelysandwich",
+      "image": "/images/adam-lisagor.jpg",
+      "blurb": "With a passion for story, detail and timing, Adam has paired his deep love of technology with amazing video abilities, making Sandwich Video the premiere production company for tech companies to introduce their wares."
+    }
+  ],
+  "crew": [
+    {
+      "name": "Dave Morin",
+      "title": "Executive Producer",
+      "link": "https://twitter.com/davemorin",
+      "image": "/images/dave-morin.jpg",
+      "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
+    },
+    {
+      "name": "Don &amp; Darcy Schumacher",
+      "title": "Executive Producer",
+      "link": "https://www.facebook.com/darcy.schumacher",
+      "image": "/images/don-darcy-schumacher.jpg",
+      "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
+    },
+    {
+      "name": "Greg Stikeleather",
+      "title": "Executive Producer",
+      "link": "https://www.linkedin.com/pub/greg-stikeleather/0/b62/626",
+      "image": "/images/greg-stikeleather.jpg",
+      "blurb": "As a serial entrepreneur, Greg has founded and run companies acquired by Microsoft and Netscape, been a managing partner at a San Francisco venture capital firm and run the first usability testing lab for Apple while they created the first commercial graphical interface."
+    }
+  ],
+  "post_production": [
+    {
+      "name": "Enoch Kim",
+      "title": "Musical Score",
+      "link": "https://twitter.com/themusemaker",
+      "image": "/images/enoch-kim.jpg",
+      "blurb": "Enoch Kim is a musician and a composer who loves telling stories through music."
+    }
+  ]
+}

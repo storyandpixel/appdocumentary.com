@@ -1,0 +1,67 @@
+@import "navbar";
+
+@mixin responsive-animation-declarations($layout-height) {
+  .home .header {
+    height: round($layout-height * 1.2598425197);
+  }
+  #home-video-play-button {
+    top: round($layout-height * 0.574488189);
+    width: round($layout-height * 0.2322141732);
+  }
+  #hand-over-phone {
+    width: round($layout-height * 0.7559055118);
+  }
+  #logo {
+    top: round($layout-height * 0.08818897638);
+    width: round($layout-height * 0.1858267716);
+  }
+  #tagline {
+    top: round($layout-height * 0.3);
+    font-size: round($layout-height * 0.05039370079);
+    // top: round($layout-height * 0.3291338583);
+    // width: round($layout-height * 0.4440944882);
+  }
+  #logline {
+    // font-size: round($layout-height * 0.03464566929);
+    // top: round($layout-height * 0.9023622047);
+    top: round($layout-height * 0.93);
+  }
+}
+
+$header-height: $navbar-height + $latest-post-bar-height;
+$viewport-height: 368px;
+@media (max-height: 367px) {
+  @include responsive-animation-declarations($viewport-height - $header-height);
+}
+@while $viewport-height <= 768px {
+  $layout-height: $viewport-height - $header-height;
+  @media (min-height: $viewport-height) {
+    @include responsive-animation-declarations($layout-height - 50px);
+  }
+  $viewport-height: $viewport-height + 50px;
+}
+#navbar, #latest, #hand-over-phone, #logo, #home-video-play-button, #tagline, #logline, #pre-order, #footer {
+  opacity: 0;
+}
+#home-video-play-button {
+  cursor: pointer;
+}
+#tagline {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  // font-size: 1.8em;
+}
+#logline {
+  -webkit-font-smoothing: antialiased;
+}
+#hand-over-phone {
+  max-width: 100%;
+}
+#logline {
+  font-weight: 300;
+  position: relative;
+}
+#pre-order {
+  position: relative;
+}

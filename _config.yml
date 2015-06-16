@@ -1,0 +1,19 @@
+# Site settings
+title: "App: The Human Story - A documentary coming in 2015."
+email: co@storyandpixel.com
+description: "App creation has become the new art form for our generation. This is the story of the cultural phenomenon that touches all our lives."
+baseurl: ""
+host: 0.0.0.0
+url: "http://appdocumentary.com"
+twitter_username: appdocu
+exclude: ['Gemfile']
+include: ['_data']
+assets:
+  css_compressor: sass
+
+# Build settings
+markdown: rdiscount
+# kramdown:
+#   input: GFM
+#   smartquotes: apos,apos,quot,quot
+permalink: pretty

@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title}}{% else %}{{ site.title }}{% endif %}</title>
+    <meta property="og:image" content="http://appdocumentary.com/images/hand-over-phone-1080.jpg" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title}} {% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}" />
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="/favicon-with-a.ico">
+    <!-- Bootstrap core CSS -->
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+    <script src="//use.typekit.net/mls5cjr.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <!-- <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6147112/708366/css/fonts.css"> -->
+    <link rel="stylesheet" type="text/css" href="/bower_components/magnific-popup/dist/magnific-popup.css">
+    {% stylesheet solarized-light %}
+
+    <!-- Custom CSS -->
+    {% stylesheet app %}
+</head>

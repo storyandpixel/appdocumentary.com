@@ -1,0 +1,113 @@
+---
+layout: page
+title: Sponsorship Packages
+---
+
+<div class="jumbotron jumbotron-small sponsor-packages-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Become A Sponsor</h1>
+        <p>
+          We aim to delight our sponsors for helping us make this film a reality. We will be actively promoting our sponsors for the next year-and-a-half to our audience of developers, designers, and app fans. Also, each sponsor will have a permanent home on our website.
+        </p>
+
+        <p>
+        Please <a href="mailto:co@storyandpixel.com">get in touch</a> if you are interested. Thanks so much.<br>&mdash;Jake &amp; Jed
+        </p>
+      </div>
+    </div>
+  </div>
+</div> <!-- /container -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <blockquote>
+        <p class="text-center">
+          <img src="/images/jack-chawla.jpg" class="img-circle" style="width: 100px" alt="Jack Chawla">
+        </p>
+        <p>
+          Being a sponsor of App has been delightful. When it came to creating assets for us, Jed and Jake took the time to really dig in and understand our product. The video they created for us is top notch and they were a joy to work with. This is an important film for everyone who’s been affected by the app explosion and we're honored to be a part of it.
+        </p>
+        <footer>Jack Chawla<br>
+        VP, Products, <a href="http://www.moxtra.com/">Moxtra</a></footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="sponsorship-package corporate-sponsorship-package">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>Corporate Sponsorship - $8,000</h1>
+        {% assign sponsors = site.data.sponsors.corporate_sponsors %}
+        {% include sponsor-list.html %}
+        <ul>
+          <li>Your logo, promo video, and website link in the most prominent place on our sponsors page</li>
+          <li>A short video produced by us reviewing your product and thanking you for supporting a film for the app community</li>
+          <li>Tickets to either the LA or Twin Falls, Idaho premiere for 6</li>
+          <li>Invitations to the premiere after party for 6</li>
+          <li>The 'Complete App' package*</li>
+        </ul>
+      </div>
+      {% include sponsorship-contact-button.html kind="Corporate" %}
+    </div>
+  </div>
+</div>
+<div class="sponsorship-package video-sponsorship-package">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>Video Sponsorship - $2,500</h1>
+        {% assign sponsors = site.data.sponsors.video_sponsors %}
+        {% include sponsor-list.html %}
+        <ul>
+          <li>Your logo, promo video, and website link permanently included on our sponsors page</li>
+          <li>The 'Complete App' package*</li>
+        </ul>
+      </div>
+      {% include sponsorship-contact-button.html kind="Video" %}
+    </div>
+  </div>
+</div>
+<div class="sponsorship-package logo-sponsorship-package">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>Logo Sponsorship - $1,500</h1>
+        {% assign sponsors = site.data.sponsors.logo_sponsors %}
+        {% include sponsor-list.html %}
+        <ul>
+          <li>Your logo and website link permanently included on our sponsors page</li>
+          <li>The 'Complete App' package*</li>
+        </ul>
+      </div>
+      {% include sponsorship-contact-button.html kind="Logo" %}
+    </div>
+  </div>
+</div>
+<div class="sponsorship-package link-sponsorship-package">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>Link Sponsorship - $750</h1>
+        {% assign sponsors = site.data.sponsors.link_sponsors %}
+        {% include sponsor-list.html sponsors = site.data.sponsors.link_sponsors %}
+        <ul>
+          <li>Your website link permanently included on our sponsors page</li>
+          <li>The 'Complete App' package*</li>
+        </ul>
+      </div>
+      {% include sponsorship-contact-button.html kind="Link" %}
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p><br>*All sponsorship packages include the complete App: The Human Story video archive: digital download of the film, the director's commentary version, all cast commentary versions, and all the App stories (complete interviews).</p>
+    </div>
+  </div>
+</div>

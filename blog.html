@@ -1,0 +1,9 @@
+---
+layout: blog
+title: "Blog"
+---
+
+{% for post in site.posts %}
+  {% assign page = post %}
+  {% include post.html %}
+{% endfor %}

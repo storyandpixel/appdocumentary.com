@@ -1,0 +1,44 @@
+<div id="navbar" class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand img" href="/"><img src="/images/app-logo-empty.svg" height="100%"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        {% for node in site.pages %}
+          {% if node.title %}
+            {% if node.title != 'Sponsorship Packages' %}
+              {% if node.title != 'Survey'%}
+                <li>
+                  {% if page.url == node.url %}
+                  <a class="active page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+                  {% else %}
+                  <a class="page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+                  {% endif %}
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        <li>
+          <a class="page-link" href="http://buy.appdocumentary.com">Store</a>
+        </li>
+        <li>
+          <a class="page-link" href="/feed.xml">RSS Feed</a>
+        </li>
+        <li>
+          <a class="page-link" href="mailto:co@storyandpixel.com">Contact Us</a>
+        </li>
+      </ul>
+      <div class="nav-mailing-list-signup">
+        {% include mailing-list-signup.html %}
+      </div>
+    </div><!--/.navbar-collapse -->
+  </div>
+</div>

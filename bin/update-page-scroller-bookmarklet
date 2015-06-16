@@ -1,0 +1,4 @@
+#!/bin/bash
+# requires uglify-js to be globally installed. run 'npm install -g uglify-js' to get it
+echo -n "javascript:" > _includes/page-scroller-bookmarklet.js
+(cat _includes/page-scroller.js ; echo "scrollViaPrompt();") | uglifyjs --mangle --wrap --screw-ie8 | sed "s/\"/'/g" >> _includes/page-scroller-bookmarklet.js

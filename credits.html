@@ -1,0 +1,107 @@
+---
+layout: page
+title: Credits
+---
+
+<div class="jumbotron jumbotron-small credits">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Credits</h1>
+        <p>
+          These are the people making this film possible.
+        </p>
+        <p>
+          <small class="muted">Full credits (including cast) coming soon.</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div> <!-- /container -->
+
+<div class="credits body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Founding Executive Producers</h1>
+      </div>
+    </div>
+    <div class="row">
+      {% for crew_member in site.data.credits.founders %}
+      <div class="person col-md-4 col-sm-6">
+        <a href="{{ crew_member.link }}" class="thumbnail">
+          <img class="img-responsive" src="{{ crew_member.image }}">
+        </a>
+        <h2>
+          <a href="{{ crew_member.link }}">
+            {{ crew_member.name }}
+          </a>
+        </h2>
+        <h3>
+          <small>
+            {{ crew_member.title }}
+          </small>
+        </h3>
+        <p class="person_blurb">
+        {{ crew_member.blurb }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Executive Producers</h1>
+      </div>
+    </div>
+    <div class="row">
+      {% for crew_member in site.data.credits.crew %}
+      <div class="person col-md-4 col-sm-6">
+        <a href="{{ crew_member.link }}" class="thumbnail">
+          <img class="img-responsive" src="{{ crew_member.image }}">
+        </a>
+        <h2>
+          <a href="{{ crew_member.link }}">
+            {{ crew_member.name }}
+          </a>
+        </h2>
+        <h3>
+          <small>
+            {{ crew_member.title }}
+          </small>
+        </h3>
+        <p class="person_blurb">
+        {{ crew_member.blurb }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Post-Production</h1>
+      </div>
+    </div>
+    <div class="row">
+      {% for crew_member in site.data.credits.post_production %}
+      <div class="person col-md-4 col-sm-6">
+        <a href="{{ crew_member.link }}" class="thumbnail">
+          <img class="img-responsive" src="{{ crew_member.image }}">
+        </a>
+        <h2>
+          <a href="{{ crew_member.link }}">
+            {{ crew_member.name }}
+          </a>
+        </h2>
+        <h3>
+          <small>
+            {{ crew_member.title }}
+          </small>
+        </h3>
+        <p class="person_blurb">
+        {{ crew_member.blurb }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+

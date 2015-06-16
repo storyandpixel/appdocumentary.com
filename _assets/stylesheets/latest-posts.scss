@@ -1,0 +1,13 @@
+$latest-post-bar-height: ms(3);
+
+.latest {
+  background-color: $brand-primary;
+  height: $latest-post-bar-height;
+  font-size: ms(-1);
+}
+.latest p {
+  margin-top: 7px;
+}
+.latest strong {
+  padding-right: 0.6em;
+}

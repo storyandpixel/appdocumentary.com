@@ -1,0 +1,48 @@
+<div class="product col-sm-3">
+  <div class="product-display">
+    <!-- <img class="product&#45;image" src="/images/products/photos/{{ product.class }}.jpg"> -->
+    <img class="full-width" src="/images/transparent.png">
+    <img class="product-icon {{ product.class }}" src="/images/products/icons/{{ product.class }}.svg">
+  </div>
+  <h3 class="product-title">{{ product.label }}</h3>
+  <p class="product-description">
+  {{ product.description }}
+  </p>
+  <div class="{{ product.buttons_class }} action-buttons">
+    {% for button in product.buttons %}
+    <div class="action-button">
+      <form method="post" action="http://buy.appdocumentary.com/cart" class="add">
+        <input id="option" name="cart[add][id]" type="hidden" value="{{ button.product_id }}">
+        {% if button.variations %}
+          <div class="btn-group">
+            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-cart-plus fa-lg"></i>
+            <small>$</small>{{ button.price }} - {{ button.label }} <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              {% for variation in button.variations %}
+              <li class="product-variation"><a data-product-id="{{ variation.product_id }}">{{ variation.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% else %}
+          <button name="submit" type="submit" class="btn btn-default btn-sm">
+            <i class="fa fa-cart-plus fa-lg"></i>
+            <small>$</small>{{ button.price }} - {{ button.label }}
+          </button>
+        {% endif %}
+      </form>
+    </div>
+    {% endfor %}
+    {% if product.photos %}
+      {% for product_photo in product.photos %}
+        <div class="action-button">
+          <a href="{{ product_photo.src }}" class="btn btn-default btn-sm product-photo-link">
+            <i class="fa fa-picture-o fa-lg"></i>
+            View photo
+          </a>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

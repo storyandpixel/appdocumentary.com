@@ -1,0 +1,264 @@
+// this tells which screen size to use to start breaking on
+// will tell navbar when to collapse
+$grid-float-breakpoint: 992px;
+
+// then import your bootstrap
+@import "bower_components/modular-scale/stylesheets/_modular-scale";
+$ms-base: 18px;
+// https://github.com/modularscale/modularscale-sass#ratios
+$ms-ratio: $major-third;
+@import "colors";
+@import "scaffolding";
+@import "type";
+@import "buttons";
+@import "forms";
+@import "navbar";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/theme";
+@import "bower_components/font-awesome/scss/font-awesome";
+@import "app-stories";
+@import "credits";
+@import "featured-sponsor";
+@import "home";
+@import "jumbotrons";
+@import "mailing-list-signup";
+@import "products";
+@import "sponsors";
+
+.full-width { width: 100%; }
+body {
+  padding-bottom: 20px;
+}
+.blog {
+  background-color: white;
+  padding-bottom: 3em;
+}
+.meta {
+  font-family: "kulturista-web", serif;
+  font-style: italic;
+  font-size: 19px;
+}
+.blog .post {
+  margin-bottom: 12em;
+}
+// .blog .post {
+//   border-bottom: 1px solid #EEE;
+//   padding-bottom: 2em;
+//   margin-bottom: 2em;
+// }
+// .blog .post h1:not(:first-child) {
+//   margin-top: 1em;
+// }
+// .blog .post:last-child {
+//   border-bottom: none;
+//   padding-bottom: 0;
+//   margin-bottom: 0;
+// }
+// .navbar {
+//   border-bottom: none;
+// }
+// a:hover {
+//   background-color: white;
+//   color: #222;
+//   border-bottom: none;
+//   text-shadow: none;
+//   text-decoration: none;
+// }
+// .blog a:hover {
+//   background-color: black;
+//   color: #ddd;
+// }
+// a.img:hover {
+//   background-color: transparent;
+//   color: inhert;
+// }
+// h1, h2, h3, h4, .h4 {
+//   // font-family: 'league_gothicregular';
+//   // font-family: "aktiv-grotesk-std",sans-serif;
+//   font-family: 'Raleway', sans-serif;
+//   // font-family: "futura-pt-condensed",sans-serif;
+//   font-weight: 200;
+//   // text-transform: uppercase;
+// }
+// h2 {
+//   line-height: 1.4em;
+// }
+// .blog h1 {
+//   font-size: 55px;
+// }
+// .blog h2 {
+//   margin-top: 34px;
+//   margin-bottom: 21px;
+//   font-size: 34px;
+// }
+// .post-header {
+//   margin-top: 55px;
+//   margin-bottom: 34px;
+// }
+// .blog h1, .blog h2, .blog h3, .post-header {
+//   text-align: center;
+// }
+// .post-content img {
+//   max-width: 100%;
+// }
+// h3 {
+//   letter-spacing: 1px;
+// }
+// h4, .h4 {
+//   font-size: 18px;
+//   letter-spacing: 1px;
+//   vertical-align: middle;
+// }
+// p {
+//   line-height: 1.6em;
+// }
+// .navbar-inverse {
+//   background-color: #222;
+// }
+// body {
+//   background-color: #222;
+// }
+// .navbar {
+//   border-radius: 0;
+//   margin-bottom: 0;
+// }
+// .navbar-header {
+//   padding-bottom: 1em;
+// }
+// .navbar-brand {
+//   height: auto;
+// }
+// .navbar-toggle {
+//   margin-top: 32px;
+// }
+// .navbar-nav {
+//   margin-top: 23px;
+// }
+// .email-form {
+//   margin-bottom: 4px;
+//   width: 100%;
+//   button {
+//     float: right;
+//   }
+//   input {
+//     height: 33px;
+//     width: 100%;
+//   }
+//   span {
+//     display: block;
+//     overflow: hidden;
+//     padding-right: 4px;
+//   }
+// }
+//
+// input.form-control, .btn, .btn:hover {
+//   background-color: white;
+//   border: 1px solid #888;
+//   color: #222;
+//   font-weight: 300;
+// }
+// input.form-control {
+//   color: #888;
+//   background-color: transparent;
+// }
+// .btn:hover {
+//   background-color: transparent;
+//   color: #888;
+// }
+// .twitter-avatar {
+//   width: 24px;
+// }
+// .video-wrapper img {
+//   max-width: 100%;
+// }
+// /* .sponsors img:hover { */
+// /*   -webkit-filter: none; */
+// /*   filter: none; */
+// /* }   */
+// @media (min-width: 768px) {
+//   /* FIXME */
+//   .navbar-form {
+//     width: 273px;
+//   }
+//   .navbar-form .form-control.email-input {
+//     width: 170px;
+//   }
+// }
+// .home {
+//   background: #000
+// }
+// .social {
+//   line-height: 2em;
+// }
+// .social img {
+//   max-width: 31px;
+// }
+// .pull-right {
+//   float: right;
+// }
+// .muted {
+//   font-style: italic;
+// }
+// 
+// blockquote {
+//   border-left: 0;
+//   text-align: center;
+// }
+// blockquote p {
+//   // font-family: 'Didot 06 A', 'Didot 06 B';
+//   font-family: "lexia";
+//   font-size: 21px;
+//   font-style: italic;
+//   font-weight: 200;
+// }
+// blockquote footer:before {
+//   content: ''
+// }
+.post-amble {
+  margin-top: 2em;
+}
+// #footer {
+//   padding-top: 5em;
+// }
+// .follow-options {
+//   margin-bottom: 1em;
+// }
+// .follow-us .btn {
+//   margin-bottom: .6em;
+//   text-align: left;
+//   width: 100%;
+// }
+// .meta {
+//   font-size: 90%;
+//   color: #999;
+// }
+// pre, .highlight {
+//   background: none;
+//   border: none;
+//   color: #303030;
+//   font-size: 86%;
+//   margin: 1em 0;
+//   padding: 0;
+// }
+// svg path, svg line, svg polyline {
+//   stroke: #000;
+//   stroke-width: 1px;
+// }
+// svg path {
+//   fill: transparent;
+// }
+// svg.animated {
+//   margin-bottom: 1em;
+// }
+// .credits.body h1 {
+//   margin-bottom: 1em;
+// }
+// .person img {
+//   width: 100%;
+// }
+// .person h2 {
+//   margin-bottom: 0;
+// }
+// .person h3 {
+//   margin-top: 0;
+// }

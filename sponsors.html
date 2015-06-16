@@ -1,0 +1,108 @@
+---
+layout: page
+title: Sponsors
+---
+
+<div class="jumbotron jumbotron-small sponsor-page">
+  <div class="container">
+    <div class="row block">
+      <div class="col-sm-6">
+        <h1>Sponsors</h1>
+        <p>
+          This film was made possible by the generous support of our sponsors below, along with over 2,000 other backers.
+        </p>
+        <p>
+          With independent films, you have to do a lot with a little. Consider partnering with us to tell this important story. Check out our <a href="/sponsorship-packages/">sponsorship packages</a>.
+        </p>
+      </div>
+      <div class="col-sm-6 text-center vertically-centered">
+        <a href="/sponsorship-packages/" class="img" id="sponsor-badge"><img src="/images/sponsor-badge.svg" alt="Become a sponsor"></a>
+      </div>
+    </div>
+  </div>
+</div> <!-- /container -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="sponsor-header text-center">Corporate Sponsors</h1>
+    </div>
+  </div>
+</div>
+
+{% for corporate_sponsor in site.data.sponsors.corporate_sponsors %}
+  {% if corporate_sponsor.embed %}
+    <div class="jumbotron corporate-sponsor {{ corporate_sponsor.class }}">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <img src="/images/video-placeholders/{{ corporate_sponsor.placeholder }}" data-embed="{{ corporate_sponsor.embed }}" class="video-placeholder embed-responsive-item">
+            </div>
+          </div>
+          <div class="col-sm-6 blurb">
+            <p>
+              <a href="{{ corporate_sponsor.link }}" class="img">
+                <img src="/images/sponsor-logos/{{ corporate_sponsor.logo }}" alt="{{ corporate_sponsor.name }}">
+              </a>
+            </p>
+            {{ corporate_sponsor.blurb }}
+          </div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+  {% endif %}
+{% endfor %}
+
+<div class="container sponsors">
+  <div class="row video-sponsors">
+    <h1 class="sponsor-header">Video Sponsors</h1>
+    {% for video_sponsor in site.data.sponsors.video_sponsors %}
+      {% if video_sponsor.embed %}
+        <div class="col-sm-6">
+          <h2>
+              {% if video_sponsor.logo %}
+                <a href="{{ video_sponsor.link }}" class="img">
+                  <img src="/images/sponsor-logos/{{ video_sponsor.logo }}" alt="{{ video_sponsor.name }}" class="video-sponsor-logo">
+                </a>
+              {% else %}
+                <a href="{{ video_sponsor.link }}">
+                {{ video_sponsor.name }}
+                </a>
+              {% endif %}
+          </h2>
+
+          <div class="embed-responsive embed-responsive-16by9">
+            <img src="/images/video-placeholders/{{ video_sponsor.placeholder }}" data-embed="{{ video_sponsor.embed }}" class="video-placeholder embed-responsive-item">
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="row logo-sponsors">
+    <h1 class="sponsor-header">Logo Sponsors</h1>
+    {% for logo_sponsor in site.data.sponsors.logo_sponsors %}
+      {% if logo_sponsor.link %}
+        <div class="col-md-4 col-sm-6 logo-sponsor">
+          <h2>
+            <a href="{{ logo_sponsor.link }}" class="img">
+              <img src="/images/sponsor-logos/{{ logo_sponsor.logo }}" alt="{{ logo_sponsor.name }}">
+            </a>
+          </h2>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="row link-sponsors">
+    <h1 class="sponsor-header">Link Sponsors</h1>
+    {% for link_sponsor in site.data.sponsors.link_sponsors %}
+      {% if link_sponsor.link %}
+        <div class="col-md-2 col-sm-4">
+          <h3>
+            <a href="{{ link_sponsor.link }}">{{ link_sponsor.name }}</a>
+          </h3>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

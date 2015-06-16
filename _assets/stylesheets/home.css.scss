@@ -1,0 +1,41 @@
+@import "bower_components/magnific-popup/src/css/main";
+@import "latest-posts";
+@import "hand-animation";
+
+.mockup {
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+}
+body {
+  background-color: #000;
+  -webkit-backface-visibility: hidden;
+}
+.navbar-inverse {
+  background-color: transparent;
+  border-color: none;
+}
+// .big {
+//   font-size: 67px;
+// }
+#pre-order {
+  margin-top: 6em;
+}
+.home {
+  .header {
+    position: relative;
+    width: 100%;
+    img, h3 {
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

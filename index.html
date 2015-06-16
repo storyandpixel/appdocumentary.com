@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<!-- <script id="15183_c_220796" width="512" height="288" src="//player.dacast.com/js/dacast_player.js"  class="dacast&#45;video"></script> -->
+
+<div id="latest" class="latest">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <p><strong>Latest post</strong><a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <img src="/images/mockup.png" class="mockup"> -->
+
+<div class="home">
+  <div class="container">
+    <div class="header text-center">
+      <img id="hand-over-phone" src="/images/hand-over-phone.jpg">
+      <img id="home-video-play-button" src="/images/home-video-play-button.svg">
+      <img id="logo" src="/images/logo.svg">
+      <!-- <img id="tagline" src="/images/tagline.svg"> -->
+      <h3 id="tagline">the human story</h3>
+      <h4 id="logline">A film exploring what it means to be human in a world of technology.</h4>
+    </div>
+
+    <div id="pre-order">
+      <h1 class="text-center">Help make the film</h1>
+      <p class="text-center lead">App: The Human Story is an indie documentary coming in 2015. With indie filmmaking, you have to do a lot with a little and we need your help. Pre-order the film or merchandise now to keep the cameras rolling.</p>
+      <div class="products row">
+        {% for product in site.data.first_products %}
+          {% include product.html product=product %}
+        {% endfor %}
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <blockquote>
+            <p class="text-center">
+              <img src="/images/neven-quote.jpg" style="width: 104px" alt="Neven Mrgan">
+            </p>
+            <p>
+              Don’t get me wrong, I was already excited about App: The Human Story…but I had no idea Jake &amp; Jed would just blow the roof off this mother.
+            </p>
+            <footer>Neven Mrgan<br>
+            <a href="http://www.panic.com/">Panic Inc.</a></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="products row">
+        {% for product in site.data.second_products %}
+          {% include product.html product=product %}
+        {% endfor %}
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <blockquote>
+            <p class="text-center">
+              <img src="/images/craig-quote.jpg" style="width: 104px" alt="Craig Hockenberry">
+            </p>
+            <p>
+              This is your chance to create a record of something that has changed so many lives.
+            </p>
+            <footer>Craig Hockenberry<br>
+            <a href="http://www.iconfactory.com/">The Iconfactory</a></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
