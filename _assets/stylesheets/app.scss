@@ -1,6 +1,7 @@
 // this tells which screen size to use to start breaking on
 // will tell navbar when to collapse
-$grid-float-breakpoint: 992px;
+$screen-lg-min: 1170px;
+$grid-float-breakpoint: $screen-lg-min;
 
 // then import your bootstrap
 @import "bower_components/modular-scale/stylesheets/_modular-scale";
@@ -40,6 +41,9 @@ body {
 }
 .blog .post {
   margin-bottom: 12em;
+}
+.blog .post:last-child {
+  margin-bottom: 2em;
 }
 // .blog .post {
 //   border-bottom: 1px solid #EEE;

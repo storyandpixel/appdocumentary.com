@@ -2,6 +2,7 @@
 layout: post
 title: Kickstarter Postmortem - Part 2
 author: Jed & Jake
+long: true
 ---
 
 Continuing our three part series of lessons we learned from our Kickstarter project, let’s dive in to part 2 - During Campaign.
@@ -32,7 +33,7 @@ Never count the indies out.
 
 If you’ve never written a press release, be warned, they’re tough. We took a few days trying to write a usable one. We were really fortunate that some friends at the [Silver Telegram](http://thesilvertelegram.com) extend their help with its composition and send it out to their email list of tech reporters resulting in [a story on Engadget](http://www.engadget.com/2014/07/08/app-the-human-story-kickstarter/).  
 
-Overall, press releases are hard to write because they’re not formated in normal human communication. Pair this with media outlets relying less and less on them for stories and in our limited opinion they’re not really worth your time.  
+Overall, press releases are hard to write because they’re not formatted in normal human communication. Pair this with media outlets relying less and less on them for stories and in our limited opinion they’re not really worth your time.  
 
 On the flip side, there was a tinge of nostalgia as we posted our press release to PRmac knowing that so many great creators in the Mac space had gone before us.
 

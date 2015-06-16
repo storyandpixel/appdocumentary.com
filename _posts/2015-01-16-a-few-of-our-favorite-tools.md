@@ -2,6 +2,7 @@
 layout: post
 title: A Few of Our Favorite Tools
 author: Jed
+long: true
 ---
 
 We all use a lot of tools on a daily basis to complete our work and Jake and I have always been fanatical about ours. We suppose it's something that many creatives hold in common.

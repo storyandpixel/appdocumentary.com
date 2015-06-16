@@ -36,10 +36,15 @@ $font-family-serif: 'kulturista-web', serif;
   color: white;
   padding-bottom: 2px;
 }
+a.inverse {
+  color: white;
+}
+a.img, a.navbar-brand {
+  border-bottom: none;
+}
 a.img {
   font-weight: 300;
   padding-bottom: 0;
-  border-bottom: none;
 }
 body blockquote {
   border-left: 0;

@@ -2,6 +2,7 @@
 layout: post
 title: "How to automatically scroll a web page for buttery smooth screen captures"
 author: Jed
+long: true
 ---
 
 This is a fun one.

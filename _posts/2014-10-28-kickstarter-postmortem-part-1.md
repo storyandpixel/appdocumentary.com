@@ -2,6 +2,7 @@
 layout: post
 title: Kickstarter Postmortem - Part 1
 author: Jed &amp; Jake
+long: true
 ---
 
 App was our first foray into the world of crowdfunding. At each stage of the campaign, we learned a lot and we want to share our experience. Hopefully it will be helpful for others looking to crowd fund a film. We’ll even share the mistakes we made in hopes that you can avoid them with your project. Don’t miss the last one in this post—it’s a doozie.  

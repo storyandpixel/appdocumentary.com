@@ -2,6 +2,7 @@
 layout: post
 title: Neven Mrgan on Why Skeuomorphism Is Like a Classic Car
 author: Jake & Jed
+long: true
 ---
 
 <svg class="animated" version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

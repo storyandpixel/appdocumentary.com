@@ -2,6 +2,14 @@
   margin-top: 11em;
   margin-bottom: 11em;
 }
+@media (max-width: $screen-md-min) {
+  .product {
+    margin-bottom: 2em;
+  }
+  .product:nth-child(odd) {
+    clear: left;
+  }
+}
 .product {
   padding-left: 40px;
   padding-right: 40px;
