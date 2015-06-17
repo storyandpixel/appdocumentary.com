@@ -48,15 +48,11 @@
 .corporate-sponsor.intel .blurb img {
   max-width: 30%;
 }
-@media (max-width: 767px) {
-  .sponsorship-contact-button {
+@media (max-width: $screen-sm-min - 1) {
+  .sponsorship-contact-button, .blurb img {
     margin-top: 1em;
   }
 }
-// .sponsorship-package .btn, .sponsorship-package .btn:hover {
-//   border-color: white;
-//   color: black;
-// }
 .sponsorship-package {
   color: white;
   padding-bottom: 1em;
@@ -65,18 +61,14 @@
   letter-spacing: 1px;
 }
 .corporate-sponsorship-package {
-  /* background-color: #84BF49; */
   background-color: #127CC1;
 }
 .video-sponsorship-package {
-  /* background-color: #30A7BF; */
   background-color: #00AA66;
 }
 .logo-sponsorship-package {
-  /* background-color: #7049BF; */
   background-color: #153160;
 }
 .link-sponsorship-package {
-  /* background-color: #EB611C; */
   background-color: #0082D5;
 }
