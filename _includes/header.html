@@ -15,19 +15,24 @@
           {% if node.title %}
             {% if node.title != 'Sponsorship Packages' %}
               {% if node.title != 'Survey'%}
-                <li>
-                  {% if page.url == node.url %}
-                  <a class="active page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
-                  {% else %}
-                  <a class="page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
-                  {% endif %}
-                </li>
+                {% if node.title != 'App Stories'%}
+                  <li>
+                    {% if page.url == node.url %}
+                    <a class="active page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+                    {% else %}
+                    <a class="page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+                    {% endif %}
+                  </li>
+                {% endif %}
               {% endif %}
             {% endif %}
           {% endif %}
         {% endfor %}
         <li>
           <a class="page-link" href="http://buy.appdocumentary.com">Store</a>
+        </li>
+        <li>
+          <a class="page-link" href="/app-stories/">App Stories</a>
         </li>
         <li>
           <a class="page-link" href="/feed.xml">RSS Feed</a>
