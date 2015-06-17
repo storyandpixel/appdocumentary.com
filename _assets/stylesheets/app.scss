@@ -3,7 +3,6 @@
 $screen-lg-min: 1170px;
 $grid-float-breakpoint: $screen-lg-min;
 
-// then import your bootstrap
 @import "bower_components/modular-scale/stylesheets/_modular-scale";
 $ms-base: 18px;
 // https://github.com/modularscale/modularscale-sass#ratios
