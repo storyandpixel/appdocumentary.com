@@ -3,7 +3,7 @@
   max-width: ms(12);
   padding-top: 0.6em;
 }
-@media (max-width: $grid-float-breakpoint) {
+@media (max-width: $grid-float-breakpoint - 1) {
   .nav-mailing-list-signup {
     float: none;
     padding-bottom: 1em;
