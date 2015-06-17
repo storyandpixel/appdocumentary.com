@@ -1,35 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-<g>
-	
-		<line fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="89.383" y1="142.689" x2="89.383" y2="107.016"/>
-	
-		<polyline fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		78.049,132.097 89.383,142.689 100.37,132.097 	"/>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 241.221 241.221" style="enable-background:new 0 0 241.221 241.221;" xml:space="preserve">
+<g id="Layer_1">
+	<g>
+		<g>
+			<g>
+				
+					<line style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="108.993" y1="163.3" x2="108.993" y2="127.626"/>
+				
+					<polyline style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="
+					97.659,152.707 108.993,163.3 119.981,152.707 				"/>
+			</g>
+			<g>
+				
+					<line style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="148.147" y1="158.574" x2="148.147" y2="118.221"/>
+				
+					<polyline style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="
+					136.813,147.982 148.147,158.574 159.135,147.982 				"/>
+			</g>
+			<g>
+				
+					<line style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="129.051" y1="177.174" x2="129.051" y2="121.901"/>
+				
+					<polyline style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="
+					117.717,166.581 129.051,177.174 140.038,166.581 				"/>
+			</g>
+			<path style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+				M157.002,136.85c7.023-6.655,11.403-16.07,11.403-26.508c0-20.166-16.348-36.513-36.513-36.513
+				c-16.09,0-29.748,10.407-34.612,24.857c-0.739-0.068-1.486-0.104-2.243-0.104c-13.376,0-24.22,10.844-24.22,24.22
+				s10.844,24.22,24.22,24.22c0.43,0,0.858-0.011,1.283-0.033"/>
+		</g>
+		<path style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+			M90.639,105.415c-7.281,2.454-12.524,9.338-12.524,17.446"/>
+		<path style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+			M125.303,80.655c-9.315,2.652-16.793,9.665-20.088,18.69"/>
+		
+			<circle style="fill:none;stroke:#0090CD;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" cx="120.61" cy="120.611" r="115.784"/>
+	</g>
 </g>
-<g>
-	
-		<line fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="128.537" y1="137.964" x2="128.537" y2="97.61"/>
-	
-		<polyline fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		117.203,127.371 128.537,137.964 139.524,127.371 	"/>
+<g id="Layer_3">
 </g>
-<g>
-	
-		<line fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="109.441" y1="156.563" x2="109.441" y2="101.29"/>
-	
-		<polyline fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-		98.107,145.971 109.441,156.563 120.428,145.971 	"/>
-</g>
-<path fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M137.391,116.239c7.023-6.655,11.403-16.07,11.403-26.508c0-20.166-16.348-36.513-36.513-36.513
-	c-16.09,0-29.748,10.407-34.612,24.857c-0.739-0.068-1.486-0.104-2.243-0.104c-13.376,0-24.22,10.844-24.22,24.22
-	s10.844,24.22,24.22,24.22c0.43,0,0.858-0.011,1.283-0.033"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M70.029,84.805c-7.281,2.454-12.524,9.338-12.524,17.446"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M104.692,60.044c-9.315,2.652-16.793,9.665-20.088,18.69"/>
 </svg>
