@@ -1,4 +1,6 @@
 (function () {
+  'use strict';
+
   var markPageDirty = function (dirtyBit) {
     dirtyBit.value = '1';
   };
