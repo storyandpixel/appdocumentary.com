@@ -25,30 +25,20 @@
 .product-variation {
   cursor: pointer;
 }
-.product-display {
-  border-radius: 50%;
-  position: relative;
-}
-$product-colors: #fc4349 #35cb60 #1f95c1 #ad51a3 #f27e18 #fecb57;
-@for $index from 1 through length($product-colors) {
-  $color: nth($product-colors, $index);
-  .product:nth-child(#{$index}) .product-display {
-    border: 3px solid $color;
-    border-radius: 50%;
-  }
-}
-.product-icon.dvd, .product-icon.blu-ray {
-  top: 6px;
-}
-
 .product-variant {
   margin-top: 0;
 }
 .product-image {
   width: 100%;
 }
+.product-display {
+  text-align: center;
+}
 .product-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
+  width: 100%;
+}
+@media (max-width: $screen-md-min) {
+  .product-icon {
+    width: 80%;
+  }
 }
