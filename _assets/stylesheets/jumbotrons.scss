@@ -1,32 +1,5 @@
-@media (min-width: 1755px) {
-  .jumbotron.home {
-    background-position: center;
-  }
-}
-@media (max-width: 380px) {
-  .jumbotron.home {
-    background: black;
-  }
-}
-.jumbotron.sponsor-page {
-  background: #222 url(/images/neven-at-computer.jpg) no-repeat right bottom;
-}
-@media (min-width: 1755px) {
-  .jumbotron.sponsor-page {
-    background-position: center bottom;
-  }
-}
-.jumbotron.sponsor-packages-page {
-  background: #222 url(/images/jed-at-panic.jpg) no-repeat left center;
-}
-@media (min-width: 1755px) {
-  .jumbotron.sponsor-packages-page {
-    background-position: center;
-  }
-}
 .jumbotron {
   background-color: black;
-  background-size: cover;
 }
 .jumbotron.jumbotron-small {
   padding-top: 0;
@@ -65,43 +38,14 @@
 .jumbotron a:hover {
   text-decoration: none;
 }
-.jumbotron.app-stories {
-  background: black url(/images/mrgans-walking.jpg) no-repeat top;
-}
 @media (max-width: 380px) {
   h1, .h1 {
-  font-size: 29px;
+    font-size: 29px;
   }
   .jumbotron {
     padding: 0;
   }
   .jumbotron.corporate-sponsor {
     padding-top: 15px;
-  }
-}
-@media (max-width: 660px) {
-  .jumbotron, .jumbotron.app-stories {
-    background: black;
-  }
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (-o-min-device-pixel-ratio: 3/2),
-    only screen and (min--moz-device-pixel-ratio: 1.5),
-    only screen and (min-device-pixel-ratio: 1.5) {
-  .jumbotron.home {
-    background-image: url(/images/jed-jake-at-table-2x.jpg);
-    background-size: 1755px 500px;
-  }
-  .jumbotron.app-stories {
-    background-image: url(/images/mrgans-walking-2x.jpg);
-    background-size: 1755px 500px;
-  }
-  .jumbotron.sponsor-packages-page {
-    background-image: url(/images/jed-at-panic-2x.jpg);
-    background-size: 1755px 500px;
-  }
-  .jumbotron.sponsor-page {
-    background-image: url(/images/neven-at-computer-2x.jpg);
-    background-size: 1755px 500px;
   }
 }
