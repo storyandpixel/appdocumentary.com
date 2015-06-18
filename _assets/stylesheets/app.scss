@@ -4,6 +4,7 @@ $screen-lg-min: 1170px;
 $grid-float-breakpoint: $screen-lg-min;
 
 @import "bower_components/modular-scale/stylesheets/_modular-scale";
+// http://www.modularscale.com/?18&&1.25&sass&text
 $ms-base: 18px;
 // https://github.com/modularscale/modularscale-sass#ratios
 $ms-ratio: $major-third;
