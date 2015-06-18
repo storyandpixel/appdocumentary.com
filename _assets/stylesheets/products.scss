@@ -2,7 +2,7 @@
   margin-top: 11em;
   margin-bottom: 11em;
 }
-@media (max-width: $screen-md-min) {
+@media (max-width: $screen-md-min - 1) {
   .product {
     margin-bottom: 2em;
   }
@@ -35,9 +35,9 @@
   text-align: center;
 }
 .product-icon {
-  width: 100%;
+  width: 95%;
 }
-@media (max-width: $screen-md-min) {
+@media (max-width: $screen-md-min - 1) {
   .product-icon {
     width: 80%;
   }
