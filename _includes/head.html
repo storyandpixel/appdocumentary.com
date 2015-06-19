@@ -1,7 +1,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% if page.title == 'home' %}
+    <title>{{ site.title }}</title>
+    {% else %}
     <title>{% if page.title %}{{ page.title }} | {{ site.title}}{% else %}{{ site.title }}{% endif %}</title>
+    {% endif %}
     <meta property="og:image" content="http://appdocumentary.com/images/hand-over-phone-1080.jpg" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title}} {% else %}{{ site.title }}{% endif %}" />
     <meta property="og:site_name" content="{{ site.title }}" />
