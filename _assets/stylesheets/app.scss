@@ -200,9 +200,10 @@ body {
 // .pull-right {
 //   float: right;
 // }
-// .muted {
-//   font-style: italic;
-// }
+.muted {
+  color: #777;
+  font-weight: 300 !important;
+}
 // 
 // blockquote {
 //   border-left: 0;
