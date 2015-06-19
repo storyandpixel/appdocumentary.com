@@ -80,9 +80,20 @@
     });
   };
 
+  var initializeMagnificPopup = function () {
+    $('#home-video-play-button').magnificPopup({
+      items: {
+        src: 'https://vimeo.com/106228915'
+      },
+      type: 'iframe'
+    });
+    $('.product-photo-link').magnificPopup({ type: 'image' });
+  };
+
   $(function () {
     initializeVideoPlaceholders();
     initializeAnimatedSvgElements();
+    initializeMagnificPopup();
     verticallyCenterElements();
     animateSponsorBadge();
     cleanupSponsorLists();
