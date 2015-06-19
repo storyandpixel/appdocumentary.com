@@ -15,7 +15,6 @@
     }
 
     var anim = new TimelineLite();
-    // anim.to('#hand-over-phone', 2, { delay: 0.5, opacity: 1});
     anim.append([
       TweenLite.to('#hand-over-phone', 2, { delay: 0.5, opacity: 1 }),
       TweenLite.to('#logo', 2, { delay: 0.5, opacity: 1 }),
@@ -23,8 +22,7 @@
     anim.append([
       TweenLite.from('#hand-over-phone', 3, {
         ease: Cubic.easeInOut,
-        y: -1 * baseHeight * 0.3911342894//,
-        //onStart: function () { $('#logo').css({ opacity: 1 }); }
+        y: -1 * baseHeight * 0.3911342894
       }),
       TweenLite.from('#logo', 3, { ease: Cubic.easeInOut, y: -1 * baseHeight * 0.4563233377 })
     ]);
