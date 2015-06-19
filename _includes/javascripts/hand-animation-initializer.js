@@ -36,15 +36,10 @@
   var isAnimationDisabled = queryStringMatchesRegexp.bind(null, /no-animation/);
   var forceAnimation = queryStringMatchesRegexp.bind(null, /force-animation/);
 
-  if (forceAnimation() ||
-      (!backButtonWasUsed() &&
-       !animationPlayedMaxTimes() &&
-       !isAnimationDisabled())) {
-    document.body.className = 'animating';
-    // workaround Chrome bug where the background of the 'latest' bar is left visible for the animation (forces a repaint)
-    var latest = document.querySelector('#latest');
-    latest.style.display='none';
-    latest.offsetHeight;
-    latest.style.display='';
+  if (!forceAnimation() ||
+      (backButtonWasUsed() &&
+       animationPlayedMaxTimes() &&
+       isAnimationDisabled())) {
+    document.body.className = '';
   }
 })();

@@ -3,7 +3,11 @@
 
   {% include head.html %}
 
-    <body>
+    {% if page.title == 'home' %}
+      <body class="animating">
+    {% else %}
+      <body>
+    {% endif %}
 
     {% include header.html %}
 
