@@ -1,0 +1,214 @@
+[
+  {
+    "categories": [
+      {
+        "url": "/category/film",
+        "permalink": "film",
+        "name": "Film",
+        "id": 8832286
+      }
+    ],
+    "artists": [],
+    "images": [
+      {
+        "height": 500,
+        "width": 500,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/160106482/-/webstore_icons_1.3_digital-download.png",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/160106482/-/webstore_icons_1.3_digital-download.png"
+      }
+    ],
+    "options": [
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 14.99,
+        "name": "Film Only",
+        "id": 68230549
+      },
+      {
+        "has_custom_price": true,
+        "sold_out": false,
+        "price": 24.99,
+        "name": "Deluxe Edition",
+        "id": 93702472
+      }
+    ],
+    "description": "Pre-order the film at a discounted price.\r\n\r\nDigital download of the finished film in 1080p, DRM-free.\r\n\r\nThe Deluxe Edition includes director commentary.\r\n\r\nEstimated delivery: Dec 2015",
+    "created_at": "2014-07-31T02:23:13.000Z",
+    "on_sale": true,
+    "status": "active",
+    "id": 20362381,
+    "name": "App: The Human Story - Digital Download Pre-Order",
+    "permalink": "the-film-pre-order",
+    "position": 1,
+    "price": 14.99,
+    "default_price": 14.99,
+    "tax": 0,
+    "url": "/product/the-film-pre-order"
+  },
+  {
+    "categories": [
+      {
+        "url": "/category/film",
+        "permalink": "film",
+        "name": "Film",
+        "id": 8832286
+      }
+    ],
+    "url": "/product/deluxe-edition-app-the-human-story-dvd-pre-order",
+    "tax": 0,
+    "default_price": 30,
+    "price": 30,
+    "position": 2,
+    "permalink": "deluxe-edition-app-the-human-story-dvd-pre-order",
+    "name": "Deluxe Edition App: The Human Story - DVD Pre-order",
+    "id": 27320701,
+    "status": "active",
+    "on_sale": false,
+    "created_at": "2015-06-18T22:16:32.000Z",
+    "description": "Deluxe edition DVD of the finished film. Includes director commentary.\r\n\r\nEstimated delivery: Dec 2015",
+    "options": [
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 30,
+        "name": "Default",
+        "id": 93700288
+      }
+    ],
+    "shipping": [
+      {
+        "country": {
+          "code": "US",
+          "name": "United States",
+          "id": 43
+        },
+        "amount_with_others": 5,
+        "amount_alone": 5
+      },
+      {
+        "amount_with_others": 10,
+        "amount_alone": 10
+      }
+    ],
+    "images": [
+      {
+        "height": 498,
+        "width": 498,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/160106644/-/webstore_icons_1.3_dvd.png",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/160106644/-/webstore_icons_1.3_dvd.png"
+      }
+    ],
+    "artists": []
+  },
+  {
+    "categories": [
+      {
+        "url": "/category/film",
+        "permalink": "film",
+        "name": "Film",
+        "id": 8832286
+      }
+    ],
+    "url": "/product/deluxe-edition-app-the-human-story-blu-ray-pre-order",
+    "tax": 0,
+    "default_price": 35,
+    "price": 35,
+    "position": 3,
+    "permalink": "deluxe-edition-app-the-human-story-blu-ray-pre-order",
+    "name": "Deluxe Edition App: The Human Story - Blu-ray Pre-order",
+    "id": 27320722,
+    "status": "active",
+    "on_sale": false,
+    "created_at": "2015-06-18T22:17:51.000Z",
+    "description": "Deluxe edition Blu-ray of the finished film. Includes director commentary.\r\n\r\nEstimated delivery: Dec 2015",
+    "options": [
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 35,
+        "name": "Default",
+        "id": 93700342
+      }
+    ],
+    "shipping": [
+      {
+        "country": {
+          "code": "US",
+          "name": "United States",
+          "id": 43
+        },
+        "amount_with_others": 5,
+        "amount_alone": 5
+      },
+      {
+        "amount_with_others": 10,
+        "amount_alone": 10
+      }
+    ],
+    "images": [
+      {
+        "height": 498,
+        "width": 498,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/160106707/-/webstore_icons_1.3_blu-ray.png",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/160106707/-/webstore_icons_1.3_blu-ray.png"
+      }
+    ],
+    "artists": []
+  },
+  {
+    "categories": [
+      {
+        "url": "/category/film",
+        "permalink": "film",
+        "name": "Film",
+        "id": 8832286
+      }
+    ],
+    "url": "/product/fan-pack-pre-order",
+    "tax": 0,
+    "default_price": 75,
+    "price": 75,
+    "position": 4,
+    "permalink": "fan-pack-pre-order",
+    "name": "Fan Pack Pre-Order",
+    "id": 27320758,
+    "status": "active",
+    "on_sale": false,
+    "created_at": "2015-06-18T22:19:53.000Z",
+    "description": "Get the deluxe edition of the film in your choice of digital download, DVD, or Blu-ray, plus a t-shirt, a poster, and your choice of one App Story (App Stories are the nearly uncut interviews of all interviewees.)\r\n\r\nEstimated delivery: December 2015",
+    "options": [
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 75,
+        "name": "Default",
+        "id": 93700450
+      }
+    ],
+    "shipping": [
+      {
+        "country": {
+          "code": "US",
+          "name": "United States",
+          "id": 43
+        },
+        "amount_with_others": 12,
+        "amount_alone": 12
+      },
+      {
+        "amount_with_others": 18,
+        "amount_alone": 18
+      }
+    ],
+    "images": [
+      {
+        "height": 497,
+        "width": 497,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/160106845/-/webstore_icons_1.3_fan-pack.png",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/160106845/-/webstore_icons_1.3_fan-pack.png"
+      }
+    ],
+    "artists": []
+  }
+]

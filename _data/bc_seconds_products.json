@@ -1,0 +1,377 @@
+[
+  {
+    "categories": [
+      {
+        "url": "/category/t-shirts",
+        "permalink": "t-shirts",
+        "name": "T-Shirts",
+        "id": 8828896
+      }
+    ],
+    "url": "/product/it-s-not-all-sunshine-tee",
+    "tax": 0,
+    "default_price": 26.99,
+    "price": 26.99,
+    "position": 5,
+    "permalink": "it-s-not-all-sunshine-tee",
+    "name": "\"It's Not All Sunshine\" T-Shirt",
+    "id": 20362291,
+    "status": "coming-soon",
+    "on_sale": false,
+    "created_at": "2014-07-31T02:18:19.000Z",
+    "description": "All sold out for now. Sign up for our email list at <a href=\"http://appdocumentary.com\">http://appdocumentary.com</a> to be notified when we're readying to make the next order. Thanks!\r\n\r\nA lovely design from our good friend and amazing designer, <a href=\"https://www.linkedin.com/profile/view?id=86352186&trk=nav_responsive_tab_profile\">Corry Damey</a>.\r\n\r\nPrinted on a premium American Apparel t-shirt.\r\n\r\nSizing charts <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\">here for men</a> and <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=womens.shirts\">here for women</a>. Note that American Apparel t-shirts tend to run a bit smaller than others, so please double-check the sizing chart.\r\n\r\nSchedule: Orders will begin shipping mid-August\r\n\r\n<i>Note: The image is not an actual photo; it's just representative of what the art will look like on a t-shirt. We will update the product listing with real photos of men's and women's shirts once we receive our first shipment.</i>",
+    "options": [
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's Small",
+        "id": 68230330
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's Medium",
+        "id": 68230333
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's Large",
+        "id": 68230336
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's XL",
+        "id": 68230339
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's 2XL",
+        "id": 68230342
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's 3XL",
+        "id": 68230345
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's Small",
+        "id": 68244121
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's Medium",
+        "id": 68244124
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's Large",
+        "id": 68244127
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's XL",
+        "id": 68244130
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's 2XL",
+        "id": 68244133
+      }
+    ],
+    "shipping": [
+      {
+        "country": {
+          "code": "CA",
+          "name": "Canada",
+          "id": 7
+        },
+        "amount_with_others": 4,
+        "amount_alone": 4
+      },
+      {
+        "country": {
+          "code": "US",
+          "name": "United States",
+          "id": 43
+        },
+        "amount_with_others": 4,
+        "amount_alone": 4
+      },
+      {
+        "amount_with_others": 7,
+        "amount_alone": 9
+      }
+    ],
+    "images": [
+      {
+        "height": 501,
+        "width": 501,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/160106884/-/webstore_icons_1.3_sunshine-t-shirt.png",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/160106884/-/webstore_icons_1.3_sunshine-t-shirt.png"
+      },
+      {
+        "height": 1000,
+        "width": 1000,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/142508758/-/it's-not-all-sunshine-tee-final.jpg",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/142508758/-/it's-not-all-sunshine-tee-final.jpg"
+      }
+    ],
+    "artists": []
+  },
+  {
+    "categories": [
+      {
+        "url": "/category/t-shirts",
+        "permalink": "t-shirts",
+        "name": "T-Shirts",
+        "id": 8828896
+      }
+    ],
+    "url": "/product/icon-tee",
+    "tax": 0,
+    "default_price": 26.99,
+    "price": 26.99,
+    "position": 6,
+    "permalink": "icon-tee",
+    "name": "\"Icon\" T-Shirt",
+    "id": 20360740,
+    "status": "coming-soon",
+    "on_sale": false,
+    "created_at": "2014-07-31T01:00:18.000Z",
+    "description": "All sold out for now. Sign up for our email list at <a href=\"http://appdocumentary.com\">http://appdocumentary.com</a> to be notified when we're readying to make the next order. Thanks!\r\n\r\nPrinted on a premium American Apparel t-shirt.\r\n\r\nSizing charts <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts\">here for men</a> and <a href=\"http://www.americanapparel.net/sizing/default.asp?chart=womens.shirts\">here for women</a>. Note that American Apparel t-shirts tend to run a bit smaller than others, so please double-check the sizing chart.\r\n\r\nSchedule: Orders will begin shipping mid-August\r\n\r\n<i>Note: The image is not an actual photo; it's just representative of what the art will look like on a t-shirt. We will update the product listing with real photos of men's and women's shirts once we receive our first shipment.</i>",
+    "options": [
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's Small",
+        "id": 68244151
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's Medium",
+        "id": 68244154
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's Large",
+        "id": 68244157
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's XL",
+        "id": 68244160
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's 2XL",
+        "id": 68244163
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Men's 3XL",
+        "id": 68244166
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's Small",
+        "id": 68244169
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's Medium",
+        "id": 68244172
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's Large",
+        "id": 68244175
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's XL",
+        "id": 68244178
+      },
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 26.99,
+        "name": "Women's 2XL",
+        "id": 68244181
+      }
+    ],
+    "shipping": [
+      {
+        "country": {
+          "code": "CA",
+          "name": "Canada",
+          "id": 7
+        },
+        "amount_with_others": 4,
+        "amount_alone": 4
+      },
+      {
+        "country": {
+          "code": "US",
+          "name": "United States",
+          "id": 43
+        },
+        "amount_with_others": 4,
+        "amount_alone": 4
+      },
+      {
+        "amount_with_others": 7,
+        "amount_alone": 9
+      }
+    ],
+    "images": [
+      {
+        "height": 502,
+        "width": 502,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/160106899/-/webstore_icons_1.3_icon-t-shirt.png",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/160106899/-/webstore_icons_1.3_icon-t-shirt.png"
+      },
+      {
+        "height": 1601,
+        "width": 1601,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/141538762/-/app-icon-tee.jpg",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/141538762/-/app-icon-tee.jpg"
+      }
+    ],
+    "artists": []
+  },
+  {
+    "categories": [
+      {
+        "url": "/category/film",
+        "permalink": "film",
+        "name": "Film",
+        "id": 8832286
+      }
+    ],
+    "artists": [],
+    "images": [
+      {
+        "height": 503,
+        "width": 503,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/160106452/-/webstore_icons_1.3_digital-archive.png",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/160106452/-/webstore_icons_1.3_digital-archive.png"
+      }
+    ],
+    "options": [
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 325,
+        "name": "Default",
+        "id": 68237260
+      }
+    ],
+    "description": "Get the complete App: The Human Story video archive. Digital download of the film, the director's commentary version, all cast commentary versions, and all the App stories (complete interviews) in video and audio.\r\n\r\nEstimated delivery: Dec 2015",
+    "created_at": "2014-07-31T04:24:33.000Z",
+    "on_sale": false,
+    "status": "active",
+    "id": 20364307,
+    "name": "Complete Digital Archive - Pre-Order",
+    "permalink": "complete-app-package-pre-order",
+    "position": 7,
+    "price": 325,
+    "default_price": 325,
+    "tax": 0,
+    "url": "/product/complete-app-package-pre-order"
+  },
+  {
+    "categories": [
+      {
+        "url": "/category/film",
+        "permalink": "film",
+        "name": "Film",
+        "id": 8832286
+      }
+    ],
+    "url": "/product/everything-pre-order",
+    "tax": 0,
+    "default_price": 400,
+    "price": 400,
+    "position": 8,
+    "permalink": "everything-pre-order",
+    "name": "Everything - Pre-order",
+    "id": 27320494,
+    "status": "active",
+    "on_sale": false,
+    "created_at": "2015-06-18T22:05:14.000Z",
+    "description": "Get a download of the deluxe edition of the film, your choice of DVD or Blu-ray, all of the App Stories, your choice of t-shirt, a poster, and our everlasting gratitude.\r\n\r\nEstimated delivery: December 2015",
+    "options": [
+      {
+        "has_custom_price": false,
+        "sold_out": false,
+        "price": 400,
+        "name": "Default",
+        "id": 93700771
+      }
+    ],
+    "shipping": [
+      {
+        "country": {
+          "code": "US",
+          "name": "United States",
+          "id": 43
+        },
+        "amount_with_others": 12,
+        "amount_alone": 12
+      },
+      {
+        "amount_with_others": 18,
+        "amount_alone": 18
+      }
+    ],
+    "images": [
+      {
+        "height": 723,
+        "width": 723,
+        "secure_url": "https://images.bigcartel.com/bigcartel/product_images/160105996/-/everything.png",
+        "url": "http://images.bigcartel.com/bigcartel/product_images/160105996/-/everything.png"
+      }
+    ],
+    "artists": []
+  }
+]

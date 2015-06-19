@@ -2,7 +2,6 @@
   {
     "label": "Download",
     "class": "digital-download",
-    "buttons_class": "double",
     "buttons": [
       {
         "label": "Deluxe Edition",

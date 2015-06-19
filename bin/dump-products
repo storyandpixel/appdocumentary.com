@@ -1,0 +1,3 @@
+#!/bin/bash
+curl https://api.bigcartel.com/storyandpixel/products.json | jq '.[0:4]' > _data/bc_first_products.json
+curl https://api.bigcartel.com/storyandpixel/products.json | jq '.[-4:]' > _data/bc_seconds_products.json
