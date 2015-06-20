@@ -9,6 +9,8 @@ $ms-base: 18px;
 // https://github.com/modularscale/modularscale-sass#ratios
 $ms-ratio: $major-third;
 
+@import "typekit";
+
 @import "colors";
 @import "scaffolding";
 @import "type";
