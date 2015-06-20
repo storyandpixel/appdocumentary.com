@@ -1,0 +1,3 @@
+#!/bin/bash
+rsync -avz ./* appdocu:/usr/local/src/appdocumentary.com
+curl https://www.cloudflare.com/api_json.html -d 'a=fpurge_ts' -d "tkn=$CLOUDFLARE_API_KEY" -d "email=$CLOUDFLARE_EMAIL" -d 'z=appdocumentary.com' -d 'v=1'
