@@ -76,19 +76,19 @@
           },
           {
             "label": "Men's S",
-            "product_id": "68230330"
-          },
-          {
-            "label": "Men's M",
             "product_id": "68230333"
           },
           {
-            "label": "Men's L",
+            "label": "Men's M",
             "product_id": "68230336"
           },
           {
-            "label": "Men's XL",
+            "label": "Men's L",
             "product_id": "68230339"
+          },
+          {
+            "label": "Men's XL",
+            "product_id": "68230342"
           },
           {
             "label": "Women's S",
