@@ -7,6 +7,21 @@ $latest-post-bar-height: ms(3);
 }
 .latest p {
   margin-top: 7px;
+  margin-bottom: 7px;
+  padding-bottom: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.latest a {
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+.latest a:hover {
+  background-color: #FFF;
+  color: #222;
+  border-bottom: none;
+  text-shadow: none;
+  text-decoration: none;
 }
 .latest strong {
   padding-right: 0.6em;
