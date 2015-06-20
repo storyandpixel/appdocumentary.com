@@ -22,7 +22,7 @@ layout: default
       <img id="hand-over-phone" src="/images/hand-over-phone.jpg">
       <img id="home-video-play-button" src="/images/home-video-play-button.svg">
       <!-- <img id="logo" src="/images/logo.svg"> -->
-      <img id="logo" src="/images/app-logo.svg">     
+      <img id="logo" src="/images/app-logo.svg">
       <!-- <img id="tagline" src="/images/tagline.svg"> -->
       <h3 id="tagline">app: the human story</h3>
       <h4 id="logline">A film exploring what it means to be human in a world of technology.</h4>
@@ -31,6 +31,8 @@ layout: default
     <div id="pre-order">
       <h1 class="text-center">Help make the film</h1>
       <p class="text-center lead">App: The Human Story is an indie documentary coming in 2015. With indie filmmaking, you have to do a lot with a little and we need your help. Pre-order the film or merchandise now to keep the cameras rolling.</p>
+
+
       <div class="products row">
         {% for product in site.data.first_products %}
           {% include product.html product=product %}
