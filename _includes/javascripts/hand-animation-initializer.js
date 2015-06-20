@@ -36,10 +36,11 @@
   var isAnimationDisabled = queryStringMatchesRegexp.bind(null, /no-animation/);
   var forceAnimation = queryStringMatchesRegexp.bind(null, /force-animation/);
 
-  if (!forceAnimation() ||
-      (backButtonWasUsed() &&
-       animationPlayedMaxTimes() &&
-       isAnimationDisabled())) {
+  if (forceAnimation()) return;
+
+  if (backButtonWasUsed() ||
+      animationPlayedMaxTimes() ||
+      isAnimationDisabled()) {
     document.body.className = '';
   }
 })();
