@@ -31,10 +31,10 @@
     return anim;
   };
 
-  if ($('body').hasClass('animating')) {
-    $(window).load(function () {
+  window.onload = function () {
+    if ($('body').hasClass('animating')) {
       playHandAnimation();
       incrementLocalStorageCounter('homePageAnimationPlayCount');
-    });
-  }
+    }
+  };
 })();
