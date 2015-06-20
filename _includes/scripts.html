@@ -19,7 +19,11 @@
 {% javascript app %}
 {% javascript featured-sponsor %}
 {% javascript products %}
-<script>document.write('<script src="http://'
-    + (location.host || 'localhost').split(':')[0]
-    + ':35729/livereload.js?snipver=1"></'
-    + 'script>')</script>
+<script>
+  if (!(/appdocumentary.com/).test(location.host)) {
+    document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+        + ':35729/livereload.js?snipver=1"></'
+        + 'script>');
+  }
+</script>
