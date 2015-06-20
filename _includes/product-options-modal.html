@@ -1,0 +1,88 @@
+<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#{{ include.class }}-options">
+  <i class="fa fa-cart-plus fa-lg"></i>
+  <small>$</small>{{ button.price }} - {{ include.label }}
+</button>
+
+<div class="product-options-modal modal fade" id="{{ include.class }}-options" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-product-id="{{ include.product_id }}">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title">Pick Your Options</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row film-type">
+          {% if include.class == 'fan-pack' %}
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label>Film Type</label>
+                <div class="row product-thumbnails">
+                  <div class="col-xs-4">
+                    <img class="img-responsive img-circle chosen" src="/images/products/icons/digital-download.svg" data-label="Download">
+                  </div>
+                  <div class="col-xs-4">
+                    <img class="img-responsive img-circle" src="/images/products/icons/blu-ray.svg" data-label="Blu-ray">
+                  </div>
+                  <div class="col-xs-4">
+                    <img class="img-responsive img-circle" src="/images/products/icons/dvd.svg" data-label="DVD">
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% else %}
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label>Disc Type</label>
+                <div class="row product-thumbnails">
+                  <div class="col-xs-6">
+                    <img class="img-responsive img-circle chosen" src="/images/products/icons/blu-ray.svg">
+                  </div>
+                  <div class="col-xs-6">
+                    <img class="img-responsive img-circle" src="/images/products/icons/dvd.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+        <div class="row shirt-design">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label>Shirt Design</label>
+              <div class="row product-thumbnails">
+                <div class="col-xs-6">
+                  <img class="img-responsive img-circle chosen" src="/images/products/photos/icon-t-shirt-artwork.jpg" data-label="Icon">
+                </div>
+                <div class="col-xs-6">
+                  <img class="img-responsive img-circle" src="/images/products/photos/sunshine-t-shirt-artwork.jpg" data-label="Not All Sunshine">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row shirt-size">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label>Shirt Size</label>
+              <select class="form-control">
+                <option value="Men's XS">Men's XS</option>
+                <option value="Men's S">Men's S</option>
+                <option value="Men's M">Men's M</option>
+                <option value="Men's L">Men's L</option>
+                <option value="Men's XL">Men's XL</option>
+                <option value="Women's S">Women's S</option>
+                <option value="Women's M">Women's M</option>
+                <option value="Women's L">Women's L</option>
+                <option value="Women's XL">Women's XL</option>
+                <option value="Women's 2XL">Women's 2XL</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>

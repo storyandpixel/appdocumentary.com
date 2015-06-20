@@ -1,67 +1,5 @@
 [
   {
-    "label": "Not All Sunshine T-Shirt",
-    "class": "sunshine-t-shirt",
-    "photos": [
-      {
-        "src": "/images/products/photos/sunshine-t-shirt.jpg"
-      }
-    ],
-    "buttons": [
-      {
-        "label": "American Apparel",
-        "price": "27",
-        "variations": [
-          {
-            "label": "Men's Small",
-            "product_id": "68230330"
-          },
-          {
-            "label": "Men's Medium",
-            "product_id": "68230333"
-          },
-          {
-            "label": "Men's Large",
-            "product_id": "68230336"
-          },
-          {
-            "label": "Men's XL",
-            "product_id": "68230339"
-          },
-          {
-            "label": "Men's 2XL",
-            "product_id": "68230342"
-          },
-          {
-            "label": "Men's 3XL",
-            "product_id": "68230345"
-          },
-          {
-            "label": "Women's Small",
-            "product_id": "68244121"
-          },
-          {
-            "label": "Women's Medium",
-            "product_id": "68244124"
-          },
-          {
-            "label": "Women's Large",
-            "product_id": "68244127"
-          },
-          {
-            "label": "Women's XL",
-            "product_id": "68244130"
-          },
-          {
-            "label": "Women's 2XL",
-            "product_id": "68244133"
-          }
-        ]
-      }
-    ],
-    "description": "A lovely design from our good friend and amazing designer, Corry Damey. No need to wait to get yours until the film is finished. We order shirts every couple months."
-  },
-  {
     "label": "Icon T-Shirt",
     "class": "icon-t-shirt",
     "photos": [
@@ -75,39 +13,35 @@
         "price": "27",
         "variations": [
           {
-            "label": "Men's Small",
+            "label": "Men's XS",
             "product_id": "68244151"
           },
           {
-            "label": "Men's Medium",
+            "label": "Men's S",
             "product_id": "68244154"
           },
           {
-            "label": "Men's Large",
+            "label": "Men's M",
             "product_id": "68244157"
           },
           {
-            "label": "Men's XL",
+            "label": "Men's L",
             "product_id": "68244160"
           },
           {
-            "label": "Men's 2XL",
+            "label": "Men's XL",
             "product_id": "68244163"
           },
           {
-            "label": "Men's 3XL",
-            "product_id": "68244166"
-          },
-          {
-            "label": "Women's Small",
+            "label": "Women's S",
             "product_id": "68244169"
           },
           {
-            "label": "Women's Medium",
+            "label": "Women's M",
             "product_id": "68244172"
           },
           {
-            "label": "Women's Large",
+            "label": "Women's L",
             "product_id": "68244175"
           },
           {
@@ -124,6 +58,64 @@
     "description": "A simple design and long-time favorite. The icon gives a nod to the possibility, power, and creative effort emblemized by a little rounded rectangle. No need to wait to get yours until the film is finished. We order shirts every couple months."
   },
   {
+    "label": "Not All Sunshine T-Shirt",
+    "class": "sunshine-t-shirt",
+    "photos": [
+      {
+        "src": "/images/products/photos/sunshine-t-shirt.jpg"
+      }
+    ],
+    "buttons": [
+      {
+        "label": "American Apparel",
+        "price": "27",
+        "variations": [
+          {
+            "label": "Men's XS",
+            "product_id": "68230330"
+          },
+          {
+            "label": "Men's S",
+            "product_id": "68230330"
+          },
+          {
+            "label": "Men's M",
+            "product_id": "68230333"
+          },
+          {
+            "label": "Men's L",
+            "product_id": "68230336"
+          },
+          {
+            "label": "Men's XL",
+            "product_id": "68230339"
+          },
+          {
+            "label": "Women's S",
+            "product_id": "68244121"
+          },
+          {
+            "label": "Women's M",
+            "product_id": "68244124"
+          },
+          {
+            "label": "Women's L",
+            "product_id": "68244127"
+          },
+          {
+            "label": "Women's XL",
+            "product_id": "68244130"
+          },
+          {
+            "label": "Women's 2XL",
+            "product_id": "68244133"
+          }
+        ]
+      }
+    ],
+    "description": "A lovely design from our good friend and amazing designer, Corry Damey. No need to wait to get yours until the film is finished. We order shirts every couple months."
+  },
+  {
     "label": "Complete Digital Archive",
     "class": "digital-archive",
     "buttons": [
@@ -137,10 +129,13 @@
   {
     "label": "Everything",
     "class": "everything",
+    "product_id": 27320494,
     "buttons": [
       {
         "label": "Everything",
-        "price": "400"
+        "modal": true,
+        "price": "400",
+        "product_id": 93700771
       }
     ],
     "description": "Get a download of the deluxe edition of the film, your choice of DVD or Blu-ray, all of the App Stories, your choice of t-shirt, a poster, and our everlasting gratitude."

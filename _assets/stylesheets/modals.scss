@@ -1,0 +1,16 @@
+$modal-content-bg: #000;
+$modal-content-border-color: #000;
+$modal-header-border-color: #000;
+$modal-sm: ms(13);
+
+.modal-dialog {
+  margin: ms(2) auto !important;
+}
+@media (max-width: 400px) {
+  .modal-dialog {
+    margin: ms(-1) auto !important;
+  }
+}
+.modal-sm {
+  max-width: $modal-sm;
+}

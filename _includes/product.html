@@ -10,8 +10,10 @@
     {% for button in product.buttons %}
     <div class="action-button">
       <form method="post" action="http://buy.appdocumentary.com/cart" class="add">
-        <input id="option" name="cart[add][id]" type="hidden" value="{{ button.product_id }}">
-        {% if button.variations %}
+        <input class="product-id" name="cart[add][id]" type="hidden" value="{{ button.product_id }}">
+        {% if button.modal %}
+          {% include product-options-modal.html label=button.label class=product.class product_id=product.product_id %}
+        {% elsif button.variations %}
           <div class="btn-group">
             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
             <i class="fa fa-cart-plus fa-lg"></i>
@@ -37,7 +39,7 @@
         <div class="action-button">
           <a href="{{ product_photo.src }}" class="btn btn-default btn-sm product-photo-link">
             <i class="fa fa-picture-o fa-lg"></i>
-            View photo
+            View design
           </a>
         </div>
       {% endfor %}
