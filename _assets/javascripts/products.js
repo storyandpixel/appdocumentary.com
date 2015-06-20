@@ -40,10 +40,6 @@
 
     var productId = parseInt(modal.attr('data-product-id'), 10);
     var form = modal.closest('form');
-    // TODO: Rehydrate the UI based on the retained form values when a user
-    // navigates 'back' to the home page. In the meantime, punt by resetting
-    // the form.
-    form.get(0).reset();
 
     var productIdInput = form.find('input.product-id');
 
@@ -65,6 +61,12 @@
                                                       // pass 'null' for optionElements arg as
                                                       // the select box doesn't have sibling elements
     shirtSizeSelector.change(optionChanged.bind(null, null));
+
+    // TODO: Rehydrate the UI based on the retained form values when a user
+    // navigates 'back' to the home page. In the meantime, punt by resetting
+    // the form and manually calling optionChanged().
+    form.get(0).reset();
+    optionChanged(null, { target: null });
   };
 
   var initProductOptionsModals = function (productData) {
