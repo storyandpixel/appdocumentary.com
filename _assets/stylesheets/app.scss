@@ -56,6 +56,13 @@ body {
 .blog .post {
   margin-bottom: 12em;
 }
+.post p {
+  line-height: ms(2);
+  margin-bottom: ms(2);
+}
+.blog .post img {
+  @include img-responsive;
+}
 .blog .post:last-child {
   margin-bottom: 2em;
 }
