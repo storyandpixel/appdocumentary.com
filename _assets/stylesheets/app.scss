@@ -40,6 +40,11 @@ $ms-ratio: $major-third;
   @include form-control-glow;
 }
 
+.img-app-icon {
+  -webkit-mask-box-image: url(/images/app-icon-shape.svg);
+  mask-image-box-image: url(/images/app-icon-shape.svg);
+}
+
 .full-width { width: 100%; }
 body {
   padding-bottom: 20px;
