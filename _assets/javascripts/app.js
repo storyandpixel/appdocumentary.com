@@ -1,19 +1,34 @@
 (function () {
-  var overRideTweetTimelineWidth = function () {
+  var onMutation = function (selector, skipCallbackForAttr, callback) {
     MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
-    var latestTweets = $('#latest-tweets');
-    new MutationObserver(function(mutations, observer) {
-      if (!_.any(mutations, function (m) { return m.attributeName === 'width' })) {
-        latestTweets
-          .find('iframe')
-          .attr('width', '100%')
-          .css('width', '100%');
-      }
-    }).observe(latestTweets.get(0), {
-      subtree: true,
-      attributes: true
-    });;
+    $(selector).each(function (i, element) {
+      new MutationObserver(function(mutations, observer) {
+        if (!_.any(mutations, function (m) { return m.attributeName === skipCallbackForAttr })) {
+          callback($(element));
+        }
+      }).observe(element, {
+        subtree: true,
+        attributes: true
+      });;
+    });
+  };
+
+  var centerEmbeddedTweets = function () {
+    onMutation('.twitter-tweet-wrapper', 'style', function (element) {
+      element
+        .find('iframe')
+        .css('margin', '10px auto');
+    });
+  };
+
+  var overRideTweetTimelineWidth = function () {
+    onMutation('#latest-tweets', 'width', function (element) {
+      element
+        .find('iframe')
+        .attr('width', '100%')
+        .css('width', '100%');
+    });
   };
 
   var addRandomIdToElement = function (element) {
@@ -98,5 +113,6 @@
     animateSponsorBadge();
     cleanupSponsorLists();
     overRideTweetTimelineWidth();
+    centerEmbeddedTweets();
   });
 }());
