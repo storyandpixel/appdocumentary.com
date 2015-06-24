@@ -45,6 +45,11 @@ body {
   padding-bottom: 20px;
 }
 .blog {
+  .embed-responsive, .twitter-tweet-wrapper {
+    margin-bottom: ms(2);
+  }
+}
+.blog {
   background-color: white;
   padding-bottom: 3em;
 }
