@@ -20,11 +20,15 @@ $font-family-serif: 'kulturista-web', serif;
 .blog a {
   color: black;
 }
-.blog p a {
-  border-bottom: 1px solid black;
-}
-.blog p a:hover {
-  text-decoration: none;
+.blog {
+  p, li {
+    a {
+      border-bottom: 1px solid black;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
 }
 // .blog p {
 //   margin-bottom: 0.7em;
