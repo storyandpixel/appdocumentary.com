@@ -121,7 +121,8 @@
     "buttons": [
       {
         "label": "Film + App Stories",
-        "price": "325"
+        "price": "325",
+        "product_id": "68237260"
       }
     ],
     "description": "Get a download of the deluxe edition of the film in DRM-free, high quality 1080p plus all the App Stories. App Stories are the nearly uncut interviews of all interviewees."
