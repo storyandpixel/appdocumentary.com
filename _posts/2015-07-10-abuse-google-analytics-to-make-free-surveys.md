@@ -2,6 +2,7 @@
 layout: post
 author: Jed
 title: Abuse Google Analytics to Make Free Surveys
+long: true
 ---
 
 ## A little backstory
