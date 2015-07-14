@@ -4,8 +4,21 @@ layout: default
 <div class="blog">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-8 col-md-push-2">
         {{ content }}
+      </div>
+      <div class="col-md-2 col-md-pull-8 archive">
+        <h4>Archive</h4>
+        {%for post in site.posts %}
+          {% if post.next %}
+            {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+            {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+            {% if year != nyear %}
+              <h4>{{ post.date | date: '%Y' }}</h4>
+            {% endif %}
+          {% endif %}
+            <p class="small"><a href="{{ post.url }}">{{ post.title }}</a> <span class="muted">{{ post.date | date:"%d %b" }}</span></p>
+        {% endfor %}
       </div>
     </div>
   </div>

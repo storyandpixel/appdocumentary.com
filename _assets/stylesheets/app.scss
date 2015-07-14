@@ -58,6 +58,14 @@ body {
   background-color: white;
   padding-bottom: 3em;
 }
+@media (min-width: $screen-md-min) {
+  .archive {
+    margin-top: 1.2em;
+  }
+}
+.archive p a {
+  border-bottom: none;
+}
 .meta {
   font-family: "kulturista-web", serif;
   font-style: italic;
