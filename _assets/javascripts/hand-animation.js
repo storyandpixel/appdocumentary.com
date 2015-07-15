@@ -27,7 +27,7 @@
       TweenLite.from('#logo', 3, { ease: Cubic.easeInOut, y: -1 * baseHeight * 0.4563233377 })
     ]);
     anim.staggerTo(['#tagline', '#logline'], 0.75, { delay: 0.25, opacity: 1}, 1);
-    anim.staggerTo(['#home-video-play-button', '#navbar', '#latest', '#pre-order', '#footer'], 0.75, { delay: 1, opacity: 1 }, 0.25);
+    anim.staggerTo(['#home-video-play-button', '#navbar', '#latest', '#pre-order',  '#shorts', '#footer'], 0.75, { delay: 1, opacity: 1 }, 0.25);
     return anim;
   };
 

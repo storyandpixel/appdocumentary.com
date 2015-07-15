@@ -40,6 +40,24 @@ $ms-ratio: $major-third;
   @include form-control-glow;
 }
 
+#shorts {
+  margin-top: 11em;
+  margin-bottom: 1em;
+}
+.video-play-button-container {
+  cursor: pointer;
+  position: relative;
+}
+.video-play-button {
+  height: 60%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .img-app-icon {
   -webkit-mask-box-image: url(/images/app-icon-shape.svg);
   mask-image-box-image: url(/images/app-icon-shape.svg);
