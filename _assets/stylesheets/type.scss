@@ -20,6 +20,13 @@ $font-family-serif: 'kulturista-web', serif;
 .blog a {
   color: black;
 }
+.archive h4 a {
+  border-bottom: 1px solid black;
+}
+.archive h4 a:hover {
+  border-bottom: 1px solid $brand-primary;
+  text-decoration: none;
+}
 .blog {
   p, li {
     a {
