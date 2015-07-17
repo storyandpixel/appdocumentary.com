@@ -28,7 +28,7 @@
       "class": "usertesting",
       "bg": "#153160",
       "tagline": "Test With Real People. Fast.",
-      "placeholder": "user-testing-video-placeholder-1.0.jpg",
+      "placeholder": "user-testing-video-placeholder-2.0.jpg",
       "embed": "<iframe src='//fast.wistia.net/embed/iframe/sjwj0yd87e?videoFoam=true&amp;autoPlay=1' allowtransparency='true' frameborder='0' scrolling='no' class='wistia_embed' name='wistia_embed' allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen></iframe><script src='//fast.wistia.net/assets/external/E-v1.js'></script>",
       "logo": "usertesting.com.svg",
       "link": "http://www.usertesting.com/",
