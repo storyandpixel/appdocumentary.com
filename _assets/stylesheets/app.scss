@@ -43,9 +43,19 @@ $ms-ratio: $major-third;
 #shorts {
   margin-top: 11em;
   margin-bottom: 1em;
+  .lead {
+    margin-bottom: 7.5em;
+  }
+  .img-responsive {
+    border-radius: 2px;
+  }
+}
+.short {
+  margin-bottom: 2em;
 }
 .video-play-button-container {
   cursor: pointer;
+  margin-bottom: 0.5em;
   position: relative;
 }
 .video-play-button {
