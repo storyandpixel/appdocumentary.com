@@ -50,11 +50,11 @@
     {
       "name": "Asana",
       "link": "https://asana.com/",
-      "bg": "#FFFFFF",
-      "tagline": "Asana puts conversations &amp; tasks together, so you can get more done with less effort. Do Great Things with Asana.",
+      "bg": "#FA6478",
+      "tagline": "Move work forward. Asana is the easiest way for teams to track their work—and get results.",
       "logo": "asana.com.svg",
-      "placeholder": "asana-video-placeholder-1.0.jpg",
-      "embed": "<iframe src='//player.vimeo.com/video/97765314?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+      "placeholder": "asana-video-placeholder-2.0.jpg",
+      "embed": "<iframe src='https://player.vimeo.com/video/140693423?autoplay=1&color=fa6478&title=0&byline=0&portrait=0' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
     },
     {
       "name": "Path",
