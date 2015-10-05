@@ -12,7 +12,7 @@
     '</div>';
 
   var getDataFile = function () {
-    return $.get('/_data/sponsors.json');
+    return $.get('/_data/sponsors.json?dc1aff2');
   };
 
   var flattenData = function (data) {
