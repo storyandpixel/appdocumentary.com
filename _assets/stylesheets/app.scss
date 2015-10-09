@@ -93,6 +93,10 @@ body {
 }
 .archive p a {
   border-bottom: none;
+  color: #999;
+  .muted {
+    color: #999;
+  }
 }
 .meta {
   font-family: "kulturista-web", serif;
