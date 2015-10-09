@@ -4,7 +4,10 @@
   </script>
 {% endif %}
 <script src="//use.typekit.net/mls5cjr.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<script>try{Typekit.load();}catch(e){
+  console.log('TypeKit failed to load. Setting .wf-inactive on body element', e);
+  document.querySelector('body').className += ' wf-inactive';
+}</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenLite.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TimelineLite.min.js"></script>
