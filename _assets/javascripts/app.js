@@ -70,13 +70,15 @@
 
     $('svg.animated').each(function (_, el) {
       var element = $(el);
-      addOffsetAttrToInitializeDrawAfterBottomOfElementIsVisible(element);
-      var id = element.attr('id') || addRandomIdToElement(element);
-      var walkway = new Walkway({
-        selector: '#' + id,
-        duration: 3500
+      // Code in _includes/scripts.html sets svg.animated elements to
+      // invisible.  The code exists in _includes/scripts.html to
+      // prevent a flash of the svg before the code in this block can be executed.
+      $(window).load(element.css.bind(element, 'visibility', 'visible'));
+      new Vivus(el, {
+        delay: 100,
+        duration: 180,
+        type: 'delayed'
       });
-      element.one('inview', walkway.draw.bind(walkway));
     });
   };
 

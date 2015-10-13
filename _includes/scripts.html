@@ -1,3 +1,9 @@
+<script>
+  [].slice.call(document.querySelectorAll('svg.animated'))
+    .forEach(function (el) {
+      el.style.visibility = 'hidden';
+    });
+</script>
 {% if page.title == 'home' %}
   <script type="text/javascript">
     {% include javascripts/hand-animation-initializer.js %}
@@ -15,8 +21,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 {% javascript jquery.flexverticalcenter %}
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
-<script src="/bower_components/jquery.inview/jquery.inview.js"></script>
-<script src="/bower_components/walkway/src/walkway.js"></script>
+<script src="/bower_components/vivus/dist/vivus.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/plugins/CSSPlugin.min.js"></script>
 <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 {% javascript app %}
