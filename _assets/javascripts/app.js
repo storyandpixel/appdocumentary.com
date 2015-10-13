@@ -73,7 +73,9 @@
       // Code in _includes/scripts.html sets svg.animated elements to
       // invisible.  The code exists in _includes/scripts.html to
       // prevent a flash of the svg before the code in this block can be executed.
-      $(window).load(element.css.bind(element, 'visibility', 'visible'));
+      $(window).load(function () {
+        element.css('visibility', 'visible');
+      });
       new Vivus(el, {
         delay: 100,
         duration: 180,
