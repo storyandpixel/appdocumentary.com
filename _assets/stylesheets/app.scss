@@ -275,7 +275,7 @@ body {
   color: #777;
   font-weight: 300 !important;
 }
-// 
+//
 // blockquote {
 //   border-left: 0;
 //   text-align: center;
@@ -316,13 +316,14 @@ body {
 //   margin: 1em 0;
 //   padding: 0;
 // }
-// svg path, svg line, svg polyline {
-//   stroke: #000;
-//   stroke-width: 1px;
-// }
-// svg path {
-//   fill: transparent;
-// }
+svg path, svg line, svg polyline {
+  stroke: #000;
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
+}
+svg path {
+  fill: transparent;
+}
 // svg.animated {
 //   margin-bottom: 1em;
 // }
