@@ -8,6 +8,7 @@ gem 'guard-livereload'
 gem 'therubyracer'
 gem 'jekyll-assets'
 gem 'rdiscount'
+gem 'nokogiri'
 
 group :development do
   gem 'pry'
