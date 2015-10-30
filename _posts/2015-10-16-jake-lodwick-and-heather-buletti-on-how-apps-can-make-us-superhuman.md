@@ -5,7 +5,7 @@ author: Jake & Jed
 long: true
 ---
 
-{% animated_svg /images/animated-svgs/super-hero-1.0.svg %}
+<span class="scaling-strokes">{% animated_svg /images/animated-svgs/super-hero-1.0.svg %}</span>
 
 ## Catching Up
 

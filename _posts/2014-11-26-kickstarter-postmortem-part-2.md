@@ -9,10 +9,10 @@ Continuing our three part series of lessons we learned from our Kickstarter proj
 
 ## Don’t fear the middle
 
-<svg class="animated" version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+<span class="scaling-strokes"><svg class="animated" version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" viewBox="0 0 590 140" xml:space="preserve">
 <polyline fill="none" stroke="#231F20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" 1.4,138.4 1.4,2.9 13.4,2.9 13.4,138.4 21.2,138.4 21.2,104.2 33.2,104.2 33.2,138.4 41.1,138.4 41.1,118.9 53.1,118.9 53.1,138.4 60.9,138.4 60.9,132.6 72.9,132.6 72.9,138.4 80.7,138.4 80.7,130.3 92.7,130.3 92.7,138.4 100.6,138.4 100.6,129.1 112.6,129.1 112.6,138.4 120.4,138.4 120.4,128.2 132.4,128.2 132.4,138.4 140.2,138.4 140.2,130.8 152.2,130.8 152.2,138.4 160.1,138.4 160.1,133.3 172.1,133.3 172.1,138.4 179.9,138.4 179.9,136.2 191.9,136.2 191.9,138.4 199.7,138.4 199.7,129.6 211.7,129.6 211.7,138.4 219.6,138.4 219.6,135.5 231.6,135.5 231.6,138.4 239.4,138.4 239.4,136.2 251.4,136.2 251.4,138.4 259.2,138.4 259.2,136.2 271.2,136.2 271.2,138.4 279.1,138.4 279.1,136.7 291.1,136.7 291.1,138.4 298.9,138.4 298.9,136.2 310.9,136.2 310.9,138.4 318.8,138.4 318.8,134 330.8,134 330.8,138.4 338.6,138.4 338.6,135 350.6,135 350.6,138.4 358.4,138.4 358.4,136.2 370.4,136.2 370.4,138.4 378.3,138.4 378.3,136.2 390.3,136.2 390.3,138.4 398.1,138.4 398.1,134 410.1,134 410.1,138.4 417.9,138.4 417.9,129.6 429.9,129.6 429.9,138.4 437.8,138.4 437.8,131.6 449.8,131.6 449.8,138.4 457.6,138.4 457.6,108.9 469.6,108.9 469.6,138.4 477.4,138.4 477.4,126.9 489.4,126.9 489.4,138.4 497.3,138.4 497.3,135 509.3,135 509.3,138.4 517.1,138.4 517.1,131.6 529.1,131.6 529.1,138.4 536.9,138.4 536.9,2.9 548.9,2.9 548.9,138.4 556.8,138.4 556.8,26.2 568.8,26.2 568.8,138.4 576.6,138.4 576.6,1.6 588.6,1.6 588.6,138.4 "/>
-</svg>
+</svg></span>
 
 
 Here’s one you’ll hear a lot, but it’s really hard to believe when you’re in the middle of it, so let us say it again: Don’t expect much to happen in the middle of your campaign. We made it to $30k within the first 24 hours. We then grew matching ulcers as the firehouse died down to a trickle. It took us another 21 days to bring in the next $30k.

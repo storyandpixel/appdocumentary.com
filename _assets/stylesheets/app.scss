@@ -321,6 +321,11 @@ svg path, svg line, svg polyline {
   stroke-width: 1px;
   vector-effect: non-scaling-stroke;
 }
+.scaling-strokes svg {
+  path, line, polyline {
+    vector-effect: none;
+  }
+}
 svg path {
   fill: transparent;
 }
