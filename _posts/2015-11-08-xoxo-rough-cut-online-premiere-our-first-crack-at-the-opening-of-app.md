@@ -39,6 +39,8 @@ Jake & Jed<br>
   <iframe class="embed-responsive-item" src="//player.vimeo.com/video/144779018?portrait=0&amp;color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
-<p class="meta"><b>Special thanks to:</b> Our cast (you'll be seeing many more), Andy and Andy for having us at XOXO, our EP Adam Lisagor for awesome notes, our wives and kids who saw a lot less of us during this season, and everyone who has loaned us a couch or shared a drink with us while traveling.<br>
+<p class="meta">
+<b>Cast (in order of appearance):</b> John Gruber, Matías Duarte, Laura Savino, Adam Lisagor, Scott Snibbe, Windy Chien, Cabel Sasser, Neven Mrgan, Ish Shabazz, Heather Buletti, Jake Lodwick, Pasquale D'Silva, Jason Snell, Steven Frank, Björn Jeffery, Ken Wong, Steven Aquino, Ashley Nelson-Hornstein, Marco Arment, Sebastiaan de With, Denys Zhadanov, Igor Zhadanov, and Brent Simmons<br>
+<b>Special thanks to:</b> Our cast (you'll be seeing many more), Andy and Andy for having us at XOXO, our EP Adam Lisagor for awesome notes, our wives and kids who saw a lot less of us during this season, and everyone who has loaned us a couch or shared a drink with us while traveling.<br>
 <b>Musical Score By:</b> Enoch Kim<br></p>
 
