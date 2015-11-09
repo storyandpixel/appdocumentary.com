@@ -153,6 +153,3 @@ DEPENDENCIES
   rdiscount
   therubyracer
   thin
-
-BUNDLED WITH
-   1.10.6
