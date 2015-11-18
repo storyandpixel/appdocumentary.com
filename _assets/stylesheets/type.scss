@@ -43,10 +43,16 @@ $font-family-serif: 'kulturista-web', serif;
 .latest a, .jumbotron a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.latest a {
+a.clean, a.clean:hover, .latest a {
   color: white;
   padding-bottom: 2px;
+  text-decoration: none;
 }
+a.clean, a.clean:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 1px;
+}
+
 a.inverse {
   color: white;
 }
