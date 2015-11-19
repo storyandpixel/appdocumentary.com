@@ -35,6 +35,17 @@
       "blurb": "<p class='lead'>Test With Real People. Fast.</p><p>Get videos of real people speaking their thoughts as they use your website or mobile app. <a href='http://www.usertesting.com/'>Join</a> over 20,000 happy customers, from Adobe to Twitter.</p>"
     },
     {
+      "name": "AdBlock",
+      "class": "adblock",
+      "bg": "#000000",
+      "tagline": "You won't know what you're glad you're missing.",
+      "placeholder": "adblock-video-placeholder-1.0.jpg",
+      "embed": "<iframe class='embed-responsive-item' src='//player.vimeo.com/video/145167993?portrait=0&color=FC1C1C&autoplay=1' frameborder='0' allowfullscreen></iframe>",
+      "logo": "adblock.png",
+      "link": "http://www.getadblock.com/",
+      "blurb": "<p class='lead'>With AdBlock, most ads aren't even downloaded at all. So you can focus on enjoying the content you want, and spend less time waiting for it.</p><p><a href='https://getadblock.com/'>Get AdBlock Now!</a></p>"
+    },
+    {
       "name": "Moxtra",
       "class": "moxtra",
       "bg": "#0082D5",
