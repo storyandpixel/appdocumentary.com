@@ -82,8 +82,8 @@
       "bg": "#444444",
       "tagline": "Join people worldwide and learn to make The Best Caesar.",
       "logo": "thebestcaesar.com.svg",
-      "placeholder": "best-caesar-video-placeholder-1.0.jpg",
-      "embed": "<img src='/images/video-placeholders/best-caesar-video-placeholder-1.0.jpg'>"
+      "placeholder": "best-caesar-video-placeholder-2.0.jpg",
+      "embed": "<iframe src='//player.vimeo.com/video/144767383?title=0&amp;byline=0&amp;portrait=0&amp;color=FFFFFF;autoplay=1' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
     }
   ],
   "logo_sponsors": [
