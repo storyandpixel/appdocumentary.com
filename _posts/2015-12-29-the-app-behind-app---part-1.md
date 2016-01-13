@@ -2,11 +2,12 @@
 layout: post
 title: The App Behind App - Part 1
 author: Jake
+long: true
 ---
 
 {% animated_svg /images/animated-svgs/ut-quantify-post-1-1.svg %}
 
-If you've been following the progress of the film to any degree, there is a chance you've heard us mention that we made a little tool to help with the filmmaking process. One of our sponsors, UserTesting, loved the idea that the filmmakers behind a doc about apps were discovering what it took to create an app themselves. So they teamed up with us to bring you a little of the behind the scenes journey of the app behind App.
+If you've been following the progress of the film to any degree, there is a chance you've heard us mention that we made a little tool to help with the filmmaking process. One of our sponsors, [UserTesting](http://www.usertesting.com), loved the idea that the filmmakers behind a doc about apps were discovering what it took to create an app themselves. So they teamed up with us to bring you a little of the behind the scenes journey of the app behind App.
 
 ## Quantify - Rate Time in Realtime
 
