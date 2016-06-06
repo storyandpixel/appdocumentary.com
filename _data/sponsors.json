@@ -151,7 +151,12 @@
       "tagline": "Prolost – Filmmaking with your nerd out."
     },
     { "name": "Allan Fromm" },
-    { "name": "Robocat" },
+    { "name": "Thermodo",
+      "link": "http://thermodo.com",
+      "logo": "thermodo.com.svg",
+      "bg": "#1851B4",
+      "tagline": "The tiny thermometer that lets you measure the temperature, right where you are."
+    },
     { "name": "Ryan" }
   ],
   "link_sponsors": [

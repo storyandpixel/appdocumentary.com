@@ -75,7 +75,7 @@ GEM
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     kramdown (1.7.0)
-    libv8 (3.16.14.7)
+    libv8 (3.16.14.15)
     liquid (2.6.2)
     listen (2.10.0)
       celluloid (~> 0.16.0)
@@ -153,3 +153,6 @@ DEPENDENCIES
   rdiscount
   therubyracer
   thin
+
+BUNDLED WITH
+   1.11.2
