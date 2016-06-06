@@ -1,6 +1,5 @@
 {
   "corporate_sponsors": [
-    { "name": "Robb Lee" },
     {
       "name": "Intel",
       "bg": "#127CC1",
@@ -11,17 +10,6 @@
       "embed": "<iframe src='//www.youtube.com/embed/JIu16I-D3GM?rel=0&autoplay=1' class='embed-responsive-item' frameborder='0' allowfullscreen></iframe>",
       "placeholder": "intel-video-placeholder-1.0.jpg",
       "blurb": "<p>Think you know Intel? Think again.</p><p>Every day, Intel employees push the limits of computing with one guiding principle: to enrich the lives of every person on Earth through technology. This is our commitment. It is what makes us unique. <a href='http://www.intel.com'>Learn more about Intel.</a></p>"
-    },
-    {
-      "name": "Igloo",
-      "class": "igloo",
-      "bg": "#00AA66",
-      "tagline": "Igloo is an intranet you'll actually like.",
-      "placeholder": "igloo-video-placeholder-1.0.jpg",
-      "embed": "<iframe src='//player.vimeo.com/video/65272680?color=7ab142&amp;autoplay=1' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
-      "logo": "igloosoftware.com.svg",
-      "link": "http://www.igloosoftware.com/",
-      "blurb": "<p class='lead'>Igloo is an intranet you'll actually like.</p><p class='grey_18 mk_white'>Communicate and collaborate better using Igloo's built-in apps: blogs, calendars, file sharing, forums, microblogs, tasks and wikis. <a href='http://www.igloosoftware.com/apps'>Start with an app</a> or <a href='http://www.igloosoftware.com/try_igloo'>build your custom intranet solution.</a></p>"
     },
     {
       "name": "UserTesting",
@@ -35,6 +23,17 @@
       "blurb": "<p class='lead'>Test With Real People. Fast.</p><p>Get videos of real people speaking their thoughts as they use your website or mobile app. <a href='http://www.usertesting.com/'>Join</a> over 20,000 happy customers, from Adobe to Twitter.</p>"
     },
     {
+      "name": "Igloo",
+      "class": "igloo",
+      "bg": "#00AA66",
+      "tagline": "Igloo is an intranet you'll actually like.",
+      "placeholder": "igloo-video-placeholder-1.0.jpg",
+      "embed": "<iframe src='//player.vimeo.com/video/65272680?color=7ab142&amp;autoplay=1' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+      "logo": "igloosoftware.com.svg",
+      "link": "http://www.igloosoftware.com/",
+      "blurb": "<p class='lead'>Igloo is an intranet you'll actually like.</p><p class='grey_18 mk_white'>Communicate and collaborate better using Igloo's built-in apps: blogs, calendars, file sharing, forums, microblogs, tasks and wikis. <a href='http://www.igloosoftware.com/apps'>Start with an app</a> or <a href='http://www.igloosoftware.com/try_igloo'>build your custom intranet solution.</a></p>"
+    },
+    {
       "name": "AdBlock",
       "class": "adblock",
       "bg": "#000000",
@@ -44,6 +43,17 @@
       "logo": "adblock.png",
       "link": "http://www.getadblock.com/",
       "blurb": "<p class='lead'>With AdBlock, most ads aren't even downloaded at all. So you can focus on enjoying the content you want, and spend less time waiting for it.</p><p><a href='https://getadblock.com/'>Get AdBlock Now!</a></p>"
+    },
+    {
+      "name": "Praxent",
+      "bg": "#5F6062",
+      "tagline": "We don’t just make apps. We elevate and transform business.",
+      "class": "praxent",
+      "logo": "praxent.com.svg",
+      "link": "http://www.praxent.com/",
+      "embed": "<img src='/images/video-placeholders/praxent-video-placeholder-1.0.gif' class='video-placeholder embed-responsive-item'>",
+      "placeholder": "praxent-video-placeholder-1.0.gif",
+      "blurb": "<p>We don’t just make apps. We elevate and transform business.</p><p>We’re a team of talented people united under one cause: A relentless drive toward breakthrough transformation in your business. We have learned from years of successful projects, software is not about code – it’s about business results. <a href='http://www.praxent.com'>Learn more about Praxent.</a></p>"
     },
     {
       "name": "Moxtra",
