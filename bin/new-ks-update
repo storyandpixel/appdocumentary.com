@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+require 'date'
+
+unless ARGV.length == 2
+  puts "Example: ./new-ks-update 'Subtitles now available for rough cut' https://www.kickstarter.com/projects/appdocu/app-the-human-story/posts/1617432"
+  exit(1)
+end
+@posts_dir = File.join(File.expand_path('..', File.dirname(__FILE__)), '_posts')
+@title = ARGV[0]
+@url = ARGV[1]
+
+@post_filename = Date.today.strftime('%Y-%m-%d') + '-kickstarter-update-' + @title.downcase.gsub(/\W/, '-') + '.md'
+
+File.open(File.join(@posts_dir, @post_filename), 'w+') do |file|
+  file << <<-CONTENTS
+---
+layout: post
+title: KS Update - #{@title}
+author: Jed & Jake
+---
+
+Read it [here](#{@url}).
+  CONTENTS
+end
