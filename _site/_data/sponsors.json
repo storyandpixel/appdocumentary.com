@@ -1,0 +1,217 @@
+{
+  "corporate_sponsors": [
+    {
+      "name": "Intel",
+      "bg": "#127CC1",
+      "tagline": "Intel: pushing the limits of computing every day.",
+      "class": "intel",
+      "logo": "intel.com.svg",
+      "link": "http://www.intel.com/",
+      "embed": "<iframe src='//www.youtube.com/embed/JIu16I-D3GM?rel=0&autoplay=1' class='embed-responsive-item' frameborder='0' allowfullscreen></iframe>",
+      "placeholder": "intel-video-placeholder-1.0.jpg",
+      "blurb": "<p>Think you know Intel? Think again.</p><p>Every day, Intel employees push the limits of computing with one guiding principle: to enrich the lives of every person on Earth through technology. This is our commitment. It is what makes us unique. <a href='http://www.intel.com'>Learn more about Intel.</a></p>"
+    },
+    {
+      "name": "UserTesting",
+      "class": "usertesting",
+      "bg": "#153160",
+      "tagline": "Test With Real People. Fast.",
+      "placeholder": "user-testing-video-placeholder-2.0.jpg",
+      "embed": "<iframe src='//fast.wistia.net/embed/iframe/sjwj0yd87e?videoFoam=true&amp;autoPlay=1' allowtransparency='true' frameborder='0' scrolling='no' class='wistia_embed' name='wistia_embed' allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen></iframe><script src='//fast.wistia.net/assets/external/E-v1.js'></script>",
+      "logo": "usertesting.com.svg",
+      "link": "http://www.usertesting.com/",
+      "blurb": "<p class='lead'>Test With Real People. Fast.</p><p>Get videos of real people speaking their thoughts as they use your website or mobile app. <a href='http://www.usertesting.com/'>Join</a> over 20,000 happy customers, from Adobe to Twitter.</p>"
+    },
+    {
+      "name": "Igloo",
+      "class": "igloo",
+      "bg": "#00AA66",
+      "tagline": "Igloo is an intranet you'll actually like.",
+      "placeholder": "igloo-video-placeholder-1.0.jpg",
+      "embed": "<iframe src='//player.vimeo.com/video/65272680?color=7ab142&amp;autoplay=1' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+      "logo": "igloosoftware.com.svg",
+      "link": "http://www.igloosoftware.com/",
+      "blurb": "<p class='lead'>Igloo is an intranet you'll actually like.</p><p class='grey_18 mk_white'>Communicate and collaborate better using Igloo's built-in apps: blogs, calendars, file sharing, forums, microblogs, tasks and wikis. <a href='http://www.igloosoftware.com/apps'>Start with an app</a> or <a href='http://www.igloosoftware.com/try_igloo'>build your custom intranet solution.</a></p>"
+    },
+    {
+      "name": "AdBlock",
+      "class": "adblock",
+      "bg": "#000000",
+      "tagline": "You won't know what you're glad you're missing.",
+      "placeholder": "adblock-video-placeholder-1.0.jpg",
+      "embed": "<iframe class='embed-responsive-item' src='//player.vimeo.com/video/145167993?portrait=0&color=FC1C1C&autoplay=1' frameborder='0' allowfullscreen></iframe>",
+      "logo": "adblock.png",
+      "link": "http://www.getadblock.com/",
+      "blurb": "<p class='lead'>With AdBlock, most ads aren't even downloaded at all. So you can focus on enjoying the content you want, and spend less time waiting for it.</p><p><a href='https://getadblock.com/'>Get AdBlock Now!</a></p>"
+    },
+    {
+      "name": "Praxent",
+      "bg": "#5F6062",
+      "tagline": "We don’t just make apps. We elevate and transform business.",
+      "class": "praxent",
+      "logo": "praxent.com.svg",
+      "link": "http://www.praxent.com/",
+      "embed": "<img src='/images/video-placeholders/praxent-video-placeholder-1.0.gif' class='video-placeholder embed-responsive-item'>",
+      "placeholder": "praxent-video-placeholder-1.0.gif",
+      "blurb": "<p>We don’t just make apps. We elevate and transform business.</p><p>We’re a team of talented people united under one cause: A relentless drive toward breakthrough transformation in your business. We have learned from years of successful projects, software is not about code – it’s about business results. <a href='http://www.praxent.com'>Learn more about Praxent.</a></p>"
+    },
+    {
+      "name": "Moxtra",
+      "class": "moxtra",
+      "bg": "#0082D5",
+      "tagline": "Moxtra is a mobile first cloud platform and app for team communication and collaboration.",
+      "placeholder": "moxtra-video-placeholder-1.0.jpg",
+      "embed": "<iframe class='embed-responsive-item' src='//www.youtube.com/embed/E6jIuu3-wPM?rel=0&autoplay=1' frameborder='0' allowfullscreen></iframe>",
+      "logo": "moxtra.com.svg",
+      "link": "http://www.moxtra.com/",
+      "blurb": "<p class='lead'>Moxtra is a mobile first cloud platform and app for team communication and collaboration.</p><p>Moxtra's SDK makes it simple to provide real-time collaboration right within your iOS, Android, or web app. Your users can message you and each other, share images, audio, and video, meet, and share the screens of their mobile devices&mdash;all in real-time. <a href='http://www.moxtra.com/'>Use Moxtra</a> to build a community around your product.</p>"
+    }
+  ],
+  "video_sponsors": [
+    {
+      "name": "Asana",
+      "link": "https://asana.com/",
+      "bg": "#FA6478",
+      "tagline": "Move work forward. Asana is the easiest way for teams to track their work—and get results.",
+      "logo": "asana.com.svg",
+      "placeholder": "asana-video-placeholder-2.0.jpg",
+      "embed": "<iframe src='https://player.vimeo.com/video/140693423?autoplay=1&color=fa6478&title=0&byline=0&portrait=0' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+    },
+    {
+      "name": "Path",
+      "link": "https://path.com/",
+      "bg": "#FFFFFF",
+      "tagline": "One-to-one and one-to-many private messaging and sharing.",
+      "logo": "path.com.svg",
+      "placeholder": "path-video-placeholder-1.0.jpg",
+      "embed": "<iframe src='//player.vimeo.com/video/32885259?title=0&amp;byline=0&amp;portrait=0&amp;color=d6161e;autoplay=1' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+    },
+    {
+      "name": "The Best Caesar",
+      "link": "http://www.thebestcaesar.com/",
+      "bg": "#444444",
+      "tagline": "Join people worldwide and learn to make The Best Caesar.",
+      "logo": "thebestcaesar.com.svg",
+      "placeholder": "best-caesar-video-placeholder-2.0.jpg",
+      "embed": "<iframe src='//player.vimeo.com/video/144767383?title=0&amp;byline=0&amp;portrait=0&amp;color=FFFFFF;autoplay=1' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+    }
+  ],
+  "logo_sponsors": [
+    {
+      "name": "Daring Fireball",
+      "link": "http://daringfireball.net/",
+      "logo": "daringfireball.net.svg",
+      "bg": "#4A525A",
+      "tagline": "Written and produced by John Gruber"
+    },
+    {
+      "name": "Overcast",
+      "link": "http://overcast.fm/",
+      "logo": "overcast.fm.svg",
+      "bg": "#FFFFFF",
+      "tagline": "A powerful yet simple iPhone podcast player."
+    },
+    {
+      "name": "JLOOP",
+      "link": "http://jloop.com",
+      "logo": "jloop.com.svg",
+      "bg": "#13323F",
+      "tagline": "We make creative technology that matters."
+    },
+    {
+      "name": "Jampp",
+      "link": "http://jampp.com",
+      "logo": "jampp.com.svg",
+      "bg": "#FFFFFF",
+      "tagline": "Drive engaged users to your mobile apps."
+    },
+    {
+      "name": "Javelin Marketing Group",
+      "logo": "javelin.mg.svg",
+      "link": "http://www.javelin.mg/",
+      "bg": "#FFFFFF",
+      "tagline": "This is what it means to be The Agency of the Customer.™"
+    },
+    {
+      "name": "Motile",
+      "logo": "thinkmotile.com.svg",
+      "link": "http://www.thinkmotile.com/",
+      "bg": "#333333",
+      "tagline": "We help our customers envision, design and build mobile apps that move their business."
+    },
+    {
+      "name": "Moonbase",
+      "link": "http://moonbase.com",
+      "logo": "moonbase.com.svg",
+      "bg": "#081F35",
+      "tagline": "We use a deft combination of mischief and precision to craft videos built for the web."
+    },
+    {
+      "name": "KickBack",
+      "link": "http://kickbacksystems.com",
+      "logo": "kickbacksystems.com.svg",
+      "bg": "#333333",
+      "tagline": "Kickback Rewards Systems: Making Good Customers Better.™"
+    },
+    {
+      "name": "Prolost",
+      "link": "http://prolost.com",
+      "logo": "prolost.com.png",
+      "bg": "#333333",
+      "tagline": "Prolost – Filmmaking with your nerd out."
+    },
+    { "name": "Allan Fromm" },
+    { "name": "Thermodo",
+      "link": "http://thermodo.com",
+      "logo": "thermodo.com.svg",
+      "bg": "#1851B4",
+      "tagline": "The tiny thermometer that lets you measure the temperature, right where you are."
+    },
+    { "name": "Ryan" }
+  ],
+  "link_sponsors": [
+    {
+      "name": "Felt Tip Inc.",
+      "link": "http://felttip.com/",
+      "logo": "felttip.com.svg",
+      "bg": "#FFFFFF",
+      "tagline": "Creators of Sound Studio, an audio editor for Mac, and Run 5k, an interval training coach for iOS."
+    },
+    {
+      "name": "Koombea",
+      "link": "http://www.koombea.com"
+    },
+    {
+      "name": "KaL MichaeL Visual Design, Inc.",
+      "link": "http://www.kalmichael.com/",
+      "logo": "kalmichael.com.svg",
+      "bg": "#000000",
+      "tagline": "Relatable iOS and Mac design solutions. Expert UX and UI services from vision to production. San Francisco, CA"
+    },
+    {
+      "name": "Hum Tum Agency",
+      "link": "http://www.humtumagency.com"
+    },
+    {
+      "name": "Squidee Australia",
+      "link": "http://www.squidee.com/app-doco",
+      "logo": "squidee.com.png",
+      "bg": "#34AADB",
+      "tagline": "Independent Mobile and Web Development from a squid"
+    },
+    {
+      "name": "Pilot: Design and Development Studio",
+      "link": "http://pilot.co/",
+      "bg": "#222222",
+      "logo": "pilot.co.svg",
+      "tagline": "Pilot: We help clients build remarkable digital products."
+    },
+    {
+      "name": "Red Giant",
+      "link": "http://redgiant.com/",
+      "bg": "#FFFFFF",
+      "logo": "redgiant.com.svg",
+      "tagline": "Red Giant is a team of artists and technologists who create unique software tools for filmmakers, editors and designers."
+    }
+  ]
+}
