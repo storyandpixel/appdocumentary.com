@@ -1,0 +1,57 @@
+[
+  {
+    "label": "Download",
+    "class": "digital-download",
+    "buttons": [
+      {
+        "label": "Deluxe Edition",
+        "price": "25",
+        "product_id": 93702472
+      },
+      {
+        "label": "Film Only",
+        "price": "15",
+        "product_id": 68230549
+      }
+    ],
+    "description": "Download the film in DRM-free, high quality 1080p. Deluxe edition includes director commentary."
+  },
+  {
+    "label": "DVD",
+    "class": "dvd",
+    "buttons": [
+      {
+        "label": "Deluxe Edition",
+        "price": "30",
+        "product_id": 93700288
+      }
+    ],
+    "description": "Get a DVD of the deluxe edition of the film, which includes director commentary."
+  },
+  {
+    "label": "Blu-ray",
+    "class": "blu-ray",
+    "buttons": [
+      {
+        "label": "Deluxe Edition",
+        "price": "35",
+        "product_id": 93700342
+      }
+    ],
+    "description": "Get a Blu-ray of the deluxe edition of the film, which includes director commentary."
+  },
+  {
+    "label": "Fan Pack",
+    "class": "fan-pack",
+    "product_id": 27320758,
+    "buttons": [
+      {
+        "label": "Film + Shirt + Poster",
+        "modal": true,
+        "price": "75",
+        "product_id": 93787780
+      }
+    ],
+    "description": "Get the deluxe edition of the film in your choice of digital download, DVD, or Blu-ray, plus your choice of two App Stories (the nearly uncut interviews of all interviewees; we'll let you pick your two when the film is released), a t-shirt, and a poster."
+  }
+]

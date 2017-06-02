@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>App: The Human Story - A documentary coming soon.</title>
+    <description>App creation has become the new art form for our generation. This is the story of the cultural phenomenon that touches all our lives.</description>
+    <link>http://appdocumentary.com/</link>
+    <atom:link href="http://appdocumentary.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 01 Jun 2017 18:57:32 -0600</pubDate>
+    <lastBuildDate>Thu, 01 Jun 2017 18:57:32 -0600</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Jake &amp; Jed&#39;s Renderbeast</title>
+        <description>&lt;p&gt;&lt;em&gt;Special thanks to &lt;a href=&quot;https://twitter.com/chrislstevens&quot;&gt;Chris Stevens&lt;/a&gt; of &lt;a href=&quot;http://www.jloop.com/&quot;&gt;JLOOP&lt;/a&gt; for designing the editing rigs and for contributing this post.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The boys at Story &amp;amp; Pixel have been editing on Adobe Premiere using 2013 Mac Pros (the notorious &quot;trash can&quot; model, quad core) using an external RAID (a Drobo unit with 5 mechanical drives in a RAID 5 configuration, connected via USB 3.0). On the surface, this seems like it would be a solid choice for a rendering rig, what with its Xeons and FirePros, and whatnot, but it turns out that it falls a bit short in the performance department, particularly when it comes to editing in Premiere, and it&#39;s especially disappointing considering the financial cost. Since the boys are all-in on completing a feature-length film, time (and therefore computing power) is of the essence.&lt;/p&gt;
+
+&lt;p&gt;While all of us enjoy Apple products, especially the excellent operating systems they run, trying to buy a Mac Pro that can give you the most out of Premiere is something of a losing proposition, even when money is no object. While high end Macintoshes have always been disproportionately expensive compared to their PC counterparts, most of the blame here lies with Adobe and the way they&#39;ve done optimization (or lack thereof) in Premiere. Because Premiere benefits from some fairly specific components, we went down the path of hand-building a custom PC. While we built ours by hand, there are multiple reputable and affordable vendors out there that will allow you to customize nearly every part of a pre-built PC, too.&lt;/p&gt;
+
+&lt;p&gt;When it comes to rendering video, the traditional theory is that more cores == more performance. And, in fact, most other mainstream editing suites such as Sony Vegas or Final Cut Pro benefit greatly from higher core counts. This seems to make sense since video rendering is an easily parallelizable task: one core can work on one frame, while another works on the next, etc. However, for reasons that we don&#39;t fully understand, Premiere benefits much more from outright clock speed (GHz). Our initial plan for a new machine was to build an absolute monster using a twin-socket motherboard and older model Xeons (a steal of a deal at ~$90/ea), that would&#39;ve given us 16 cores and 32 threads (with Hyperthreading), but at the very last minute, a random YouTube video surfaced in the recommendations sidebar that showed a gentleman doing a direct comparison between the very same Xeons and a single quad-core Skylake i7 6700k. The i7 was miles ahead, and so we switched gears and based our build around the i7.&lt;/p&gt;
+
+&lt;p&gt;The other interesting optimization issue with Premiere is that for GPU-based tasks, it performs much better using nVidia&#39;s CUDA vs. OpenCL on AMD. While the dual workstation-grade AMD FirePros in the Mac Pro would normally be considered strong performers for most tasks, it turns out that they can&#39;t reach their full potential within the confines of Premiere—a single, inexpensive &quot;gaming&quot;-grade GPU from nVidia can wipe the floor with them, and Apple doesn&#39;t provide an nVidia option for the Mac Pro at this time.&lt;/p&gt;
+
+&lt;p&gt;The final issue we faced was with the Drobo. It&#39;s an excellent general-purpose storage appliance that is very easy to configure and use, and is extremely reliable, but it isn&#39;t designed for outright performance. Specifically, there is no flexibility on the RAID level. It uses RAID 5, which is a reasonable balance between performance and reliability, but we needed to tilt the scales much further in favor of performance. We already had multiple redundant backups, and didn&#39;t need that extra level of assurance and uptime that RAID 5 redundancy provides.&lt;/p&gt;
+
+&lt;p&gt;Enter the Renderbeast.&lt;/p&gt;
+
+&lt;p&gt;The Renderbeast was designed to play to Premier&#39;s strengths and eliminate the poor disk performance of the Drobo. &lt;a href=&quot;https://pcpartpicker.com/user/SwabTheDeck/saved/#view=jcJCmG&quot;&gt;Here is a link&lt;/a&gt; to our list of parts (excluding hard disks).&lt;/p&gt;
+
+&lt;p&gt;The quad-core Core i7 6700k is the heart of this machine. As of this writing, at 4.0 GHz, it&#39;s the highest clocked Intel processor available. What&#39;s more is that if you&#39;re slightly brave, it will easily overclock to 4.4-4.5 GHz with a modest air cooling solution like the 212 EVO that we chose. While Intel makes similar i7&#39;s with higher core counts for a bit more money, they do so at the sacrifice of clock speed, which goes against what Premiere desires. If you&#39;re in a situation where you need to run additional heavy apps alongside Premiere, it may be worth investing in the 6- or 8-core models.&lt;/p&gt;
+
+&lt;p&gt;The MSI Z170-based Gaming M5 motherboard was chosen for being reasonably priced while also providing a strong set of features. Among other things, it supports nVidia&#39;s SLI, which will allow us to add a second video card if we feel we need it (right now, things are just great with one). Most full-sized Z170-based motherboards from the likes of ASUS, Gigabyte, or other reputable vendors will have nearly identical features.&lt;/p&gt;
+
+&lt;p&gt;We outfitted the machine with 64 GB of RAM since that&#39;s the maximum amount that the motherboard can support. Video editing software will almost always make use of any memory it can, and since RAM is cheap, it made sense to max it out.&lt;/p&gt;
+
+&lt;p&gt;For the GPU, we went with the GeFore GTX 1070. We were fairly lucky to be doing this build right as nVidia&#39;s 1000-series released. The 1070 is just a tiny step down in performance from the top-of-the-line 1080, but at a much better price point ($500 vs. $850 as of this writing). With 1920 CUDA cores, this really helps Premiere fly during GPU-based rendering.&lt;/p&gt;
+
+&lt;p&gt;Storage configuration required a bit more thinking than a &quot;normal&quot; PC would require. We&#39;ve used the motherboard&#39;s RAID controller to configure 4 7.2k mechanical hard drives into RAID 0 for storing the Premiere project files and video clips. If you&#39;re unfamiliar with RAID levels (of which there are many), RAID 0 splits files across all disks, and provides no redundancy, while RAID 5 makes partial copies of each disk and breaks them out across the others. Our RAID 0 does ~500 MB/s-700 MB/s depending on how full the drives are. Imagine putting a 12 TB SSD into your machine, and that&#39;s about the performance level you can expect, but you&#39;ll be paying an order of magnitude less per gigabyte. The operating system and applications are on a separate 500 GB SSD (nothing special, just one of the inexpensive 2.5&quot; SATA drives that are common these days). Finally, there is another separate 256 GB SSD for Premiere&#39;s &quot;scratch&quot; drive. We waffled a bit about how large this should be, but ultimately, this ended up working well.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, the Story &amp;amp; Pixel boys are sad to have left Apple behind  for their editing rigs. A few details of their workflow had to be re-learned, but the benefits far outweighed the costs, both financial and technical. We hope that Apple will give the Mac Pro an overhaul some day soon, and possibly provide more configuration choices, but since they&#39;re notoriously secretive, we don&#39;t know what the future holds. Even more so, we&#39;d hope that Adobe can find a way to optimize Premiere to better accommodate other common hardware configurations, and make better use of the high core counts that many machines sport these days.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Sep 2016 00:00:00 -0600</pubDate>
+        <link>http://appdocumentary.com/2016/09/30/jake-and-jeds-renderbeast/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2016/09/30/jake-and-jeds-renderbeast/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>KS Update - Nearing completion. Looking for help with finishing costs.</title>
+        <description>&lt;p&gt;Read it &lt;a href=&quot;https://www.kickstarter.com/projects/appdocu/app-the-human-story/posts/1627450&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 19 Jul 2016 00:00:00 -0600</pubDate>
+        <link>http://appdocumentary.com/2016/07/19/kickstarter-update-nearing-completion-looking-for-help-with-finishing-costs/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2016/07/19/kickstarter-update-nearing-completion-looking-for-help-with-finishing-costs/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>KS Update - Subtitles now available for rough cut</title>
+        <description>&lt;p&gt;Read it &lt;a href=&quot;https://www.kickstarter.com/projects/appdocu/app-the-human-story/posts/1617432&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Jul 2016 00:00:00 -0600</pubDate>
+        <link>http://appdocumentary.com/2016/07/05/subtitles-now-available-for-rough-cut/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2016/07/05/subtitles-now-available-for-rough-cut/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>KS Update - Wrapping up June</title>
+        <description>&lt;p&gt;Read it &lt;a href=&quot;https://www.kickstarter.com/projects/appdocu/app-the-human-story/posts/1616948&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Jun 2016 00:00:00 -0600</pubDate>
+        <link>http://appdocumentary.com/2016/06/29/kickstarter-update-wrapping-up-june/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2016/06/29/kickstarter-update-wrapping-up-june/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>KS Update - Counting down to June</title>
+        <description>&lt;p&gt;Read it &lt;a href=&quot;https://www.kickstarter.com/projects/appdocu/app-the-human-story/posts/1584093&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 May 2016 00:00:00 -0600</pubDate>
+        <link>http://appdocumentary.com/2016/05/23/kickstarter-update-counting-down-to-june/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2016/05/23/kickstarter-update-counting-down-to-june/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The App Behind App - Part 3</title>
+        <description>&lt;p&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.2&quot; viewBox=&quot;0 0 750 422&quot; class=&quot;animated&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-77.9,95l8.2,177.9c-1.2,17.6-13.1,33.3-31.1,34.2l-237.3,13.4l-190,10.9c-18.5,2.1-36.3-12.6-37.4-25.7L-582,115.9  c-1.4-16.5,11.2-30.8,27.7-31.4c0,0,115.1-4,160.6-6.2s128.9-5,128.9-5l1.6-0.6l32.8-1.3l2,0.5l8.2-0.3l1.9-1.2l32.6-1.3l2,1.1  l23.2-0.9l1.6-1.2l16.8-0.7l1.7,1.1l32.2-1.3C-92.2,66.5-78.7,79-77.9,95z&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-578.6,99.5c0,0-5.5,5.3-5.1,21.5c0.2,7.3,8.6,118.4,13.4,178.5c1.7,21.2,19.9,37.1,41.1,36c0,0,152.1-9.5,220.7-11.9  c68.6-2.4,207.8-11.2,207.8-11.2c17.4-0.9,31-15.3,31-32.8l-0.1-7.2&quot;&gt;&lt;/path&gt;&lt;polygon fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; points=&quot;  -134.7,77.7 -522.9,94.7 -505.1,318.9 -125.5,297.8 &quot;&gt;&lt;/polygon&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-333.4,309.3&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-347.7,87.1&quot;&gt;&lt;/path&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;-133.5&quot; y1=&quot;105.7&quot; x2=&quot;-520.9&quot; y2=&quot;123.4&quot;&gt;&lt;/line&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-506.8,296.7&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-126.3,278&quot;&gt;&lt;/path&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;-393.9&quot; y1=&quot;89.3&quot; x2=&quot;-380.8&quot; y2=&quot;284&quot;&gt;&lt;/line&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-348.6,281.8&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-361.6,87.1&quot;&gt;&lt;/path&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;-146&quot; y1=&quot;279.5&quot; x2=&quot;-145.6&quot; y2=&quot;289.9&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;-140.2&quot; y1=&quot;279.2&quot; x2=&quot;-139.8&quot; y2=&quot;289.6&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;-126.7&quot; y1=&quot;271.1&quot; x2=&quot;-507.2&quot; y2=&quot;289.8&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;-263.1&quot; y1=&quot;82.6&quot; x2=&quot;-253.1&quot; y2=&quot;276.8&quot;&gt;&lt;/line&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-225.1,276.8&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M-235.2,82.6&quot;&gt;&lt;/path&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;-274.5&quot; y1=&quot;278.4&quot; x2=&quot;-273.1&quot; y2=&quot;305.4&quot;&gt;&lt;/line&gt;&lt;polygon fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; points=&quot;  -492.8,108.8 -493.4,101 -422,98 -421,111.3 -498.8,114.5 &quot;&gt;&lt;/polygon&gt;&lt;polygon fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; points=&quot;  -469.1,303.7 -469.8,295.6 -348.7,289.7 -347.7,303.1 -475.2,310.1 &quot;&gt;&lt;/polygon&gt;&lt;polygon fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; points=&quot;  -358.8,103.1 -359.2,95.3 -287.8,92.3 -287.1,105.6 -364.9,108.7 &quot;&gt;&lt;/polygon&gt;&lt;polygon fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; points=&quot;  -355.5,205.2 -356.6,185.7 -285.2,182.7 -283.8,207.7 -361.6,211.1 &quot;&gt;&lt;/polygon&gt;&lt;polygon fill=&quot;none&quot; stroke=&quot;#231F20&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; points=&quot;  -232.6,97.3 -233,89.5 -161.5,86.4 -160.9,99.8 -238.7,102.9 &quot;&gt;&lt;/polygon&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M487.4,44.6L486.5,68l-1.5-0.1l-0.5,14.4l1.4,0l-0.7,18.3l-1.2,0l-1,26.9l1.2,0.1l-0.3,7.5l-1.3,0l-1,27.5l1.3,0l-7.6,204.7  c-0.4,11.8,8.7,21.8,20.5,22.4l132.6,6.5c9.5,0.5,17.6-6.7,18.3-16.2l15.2-243l1.1,0.1l1.9-27l-1.4,0l3.6-56.9  c0.9-12.9-8.9-24-21.8-24.7l-132.7-7.1C499.3,20.6,487.9,31.1,487.4,44.6z&quot;&gt;&lt;/path&gt;&lt;polygon fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; points=&quot;  495,65.3 484.1,347.9 640.4,356.3 657.2,73.4 &quot;&gt;&lt;/polygon&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;490.1&quot; y1=&quot;191.7&quot; x2=&quot;649.7&quot; y2=&quot;199.7&quot;&gt;&lt;/line&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M497.8,196.3l66.7,3.2c1.8,0.1,3.1,1.6,3,3.4l-3.3,65.9c-0.1,1.8-1.6,3.1-3.4,3l-66.1-3.4c-1.8-0.1-3.1-1.6-3-3.3l2.7-65.7  C494.5,197.6,496,196.2,497.8,196.3z&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M494.8,272.5l66.1,3.4c1.8,0.1,3.1,1.6,3,3.4l-3.5,65c-0.1,1.8-1.6,3.1-3.4,3l-65.3-3.2c-1.8-0.1-3.1-1.6-3-3.3l2.8-65.2  C491.5,273.8,493,272.4,494.8,272.5z&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M574.8,200.2l66.7,3.2c1.8,0.1,3.1,1.6,3,3.4l-3.6,66.1c-0.1,1.8-1.6,3.1-3.4,3l-66.2-3.4c-1.8-0.1-3.1-1.6-3-3.3l3.1-66  C571.5,201.4,573,200.1,574.8,200.2z&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M571.3,276.4l65.9,3.5c1.8,0.1,3.1,1.6,3,3.4l-3.7,65.6c-0.1,1.8-1.6,3.1-3.4,3l-65.7-3.8c-1.8-0.1-3.1-1.6-3-3.3l3.4-65.2  C568,277.7,569.5,276.3,571.3,276.4z&quot;&gt;&lt;/path&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;490.9&quot; y1=&quot;172.3&quot; x2=&quot;650.8&quot; y2=&quot;180.7&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;494.7&quot; y1=&quot;191.9&quot; x2=&quot;495.5&quot; y2=&quot;172.6&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;500.8&quot; y1=&quot;192.3&quot; x2=&quot;501.7&quot; y2=&quot;173&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;505.5&quot; y1=&quot;192.3&quot; x2=&quot;506.3&quot; y2=&quot;173&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;519.6&quot; y1=&quot;193.2&quot; x2=&quot;520.4&quot; y2=&quot;173.8&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;526.5&quot; y1=&quot;193.2&quot; x2=&quot;527.4&quot; y2=&quot;173.8&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;535.7&quot; y1=&quot;194.3&quot; x2=&quot;536.5&quot; y2=&quot;174.9&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;544.5&quot; y1=&quot;194.8&quot; x2=&quot;545.3&quot; y2=&quot;175.4&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;612&quot; y1=&quot;197.7&quot; x2=&quot;612.8&quot; y2=&quot;178.3&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;623.7&quot; y1=&quot;198.4&quot; x2=&quot;624.6&quot; y2=&quot;179.1&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;575.5&quot; y1=&quot;195.8&quot; x2=&quot;576.3&quot; y2=&quot;176.5&quot;&gt;&lt;/line&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;493.9&quot; y1=&quot;93.1&quot; x2=&quot;655.5&quot; y2=&quot;101.4&quot;&gt;&lt;/line&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M515.8,102.6l-0.4,8.8c-0.1,1.2,0.9,2.2,2.1,2.3l112.4,5.9c1.2,0.1,2.3-0.9,2.3-2.1l0.3-8.8c0-1.2-0.9-2.2-2.1-2.3l-112.4-5.9  C516.9,100.4,515.8,101.4,515.8,102.6z&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M750,238c0,0-10-12-11-13.5s-6-13.5-9.5-15.7c-3.5-2.3-34-22.3-35-25.3c-1-3-10.1-29.2-14.2-32.8c-5.2-4.5-16.5,0.9-19.3,3.6&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M657.4,212.5c0,0,5.5,16.7,9,20.8c3.5,4.2,9.5,10.5,14,14.5c-0.2,4.8,0.2,14,3.3,21.2c2.9,6.5,10.5,19,17.2,26.5  c1,5.5,2.2,22.2,6.2,28.3&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M701.8,302.2c0,0-6.8-1-10,1.5s-13.5,12.5-17.5,19&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M652.7,287.3c0,0,0.3,2.3,3.6,5.4&quot;&gt;&lt;/path&gt;&lt;line fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; x1=&quot;656.8&quot; y1=&quot;221.8&quot; x2=&quot;663.3&quot; y2=&quot;228.1&quot;&gt;&lt;/line&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M482,188.8c0,0-5.8-2.5-14.5,0c-8.8,2.5-14-1.3-21,13s1,24.8,4.8,27s12.4,7.9,17.6,9.9c5.8,2.1,6.9,2.1,11.2,2.1&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M479.2,265c0,0-11,7.2-15.6,14.7c-4.6,4.4-19.8,8.9-21,19.1s-0.2,17.2,9.6,21.4s16.7,6.1,24.9,0.5&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M476.9,328.5c0,0-9-1.4-19.4-2.1s-14.4-3.8-25,3.5s-8.8,21.9-5.1,26.4s2.8,6.6,12.6,10.2s13,6.8,31.6,7c3.8,1.1,5,1.9,5,1.9&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M543.5,392.1c0,0,3.7,7.7,7.2,10.7c1.8,4.8,6.1,17.5,13.8,20.2&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M676.9,265.7c0,0-15.1,14.4-22.4,30.6&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M650.8,396.2c0,0,2.6,21.8,6.5,26.8&quot;&gt;&lt;/path&gt;&lt;path fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;1.5317&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;  M564.6,45.2&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the last of a three-part series about our app, Quantify, that we created to help us make our first feature documentary. This behind-the-scenes is possible by a partnership with the great people at &lt;a href=&quot;https://www.usertesting.com&quot;&gt;UserTesting&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;*To catch up and to get more insight into the app, check out our &lt;a href=&quot;/2015/12/29/the-app-behind-app---part-1/&quot;&gt;first&lt;/a&gt; and &lt;a href=&quot;/2016/02/15/the-app-behind-app---part-2/&quot;&gt;second&lt;/a&gt; posts.&lt;/p&gt;
+
+&lt;h1&gt;Quantify is launched!&lt;/h1&gt;
+
+&lt;p&gt;
+  &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+    &lt;iframe src=&#39;https://player.vimeo.com/video/163764622?byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;422&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;meta text-center&quot; style=&quot;margin-top: 28px&quot;&gt;Jake and our developer, Ryan Newsome, flew to Vegas this last Tuesday for the afternoon to talk to editors and shooters at NAB about Quantify.&lt;/p&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;Last week, our little filmmaking app, Quantify, &lt;a href=&quot;https://itunes.apple.com/us/app/quantify-rate-time-in-real/id1037529423?mt=8&quot;&gt;launched&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;What started as a lark is now a polished 1.0 that we are so proud of. Launching our own app that is already saving other filmmakers hours is a great feeling. When we consider what our 1.0 might have looked like if we had never done UserTesting, we can&#39;t help but cringe.&lt;/p&gt;
+
+&lt;p&gt;Full disclosure: UserTesting is one of our great sponsors for App (June, baby!), and they loved the meta story of our app, so they sponsored us to bring you a little peek behind the curtain as Quantify was brought to life. We&#39;re incredibly grateful for this opportunity as their sponsorship funded the production of App for a season when things were tight, we got to use their great services for Quantify, and we could write whatever we wanted, good or bad.&lt;/p&gt;
+
+&lt;p&gt;As you know by now, our MO at Story &amp;amp; Pixel is very DIY, community funded, bootstrapped, or a mix of the two. We take pride in doing a lot with a little and, in that spirit, we, sadly, probably would have never considered UserTesting. Most likely, we would have written it off as something we could accomplish in our beta. Luckily for us, we had an opportunity to try out UserTesting and our app is better for it.&lt;/p&gt;
+
+&lt;p&gt;Standing where we are now, we see user testing as a necessary step in the development process, but it&#39;s not something you can realistically pull off well yourself. It&#39;s near impossible to find unbiased strangers who are willing to test your app and tell you to your face that it&#39;s shit. With UserTesting, we could write a test that was exclusive to full-time video professionals with deep experience with specific software and we would have candid video tests back within an hour.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;UserTesting saved our developer a ton of time. We were able to fully understand problems before offering development ideas.&lt;/li&gt;
+&lt;li&gt;UserTesting exposed stumbling blocks that were confusing users. Quantify may be a simple app to use, but until we figured out how to clearly communicate the big idea, even seasoned filmmakers struggled to fully grasp the power of the app. Not only did uncovering this help us make the app better, it also informed our marketing in a profound way.&lt;/li&gt;
+&lt;li&gt;UserTesting was essential in streamlining the workflow of the app and testers gave us great ideas for alternate workflows and even new features!&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm-12&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;p&gt;&lt;div class=&quot;col-md-4&quot;&gt;&lt;img src=&quot;/images/posts/app-behind-app-part-3/onboarding.jpg&quot; alt=&quot;Quantify&#39;s Onboarding Video&quot;&gt;&lt;/div&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;div class=&quot;col-md-4&quot;&gt;&lt;img src=&quot;/images/posts/app-behind-app-part-3/news-reader.png&quot; alt=&quot;Quantify&#39;s New News Reader&quot;&gt;&lt;/div&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;div class=&quot;col-md-4&quot;&gt;&lt;img src=&quot;/images/posts/app-behind-app-part-3/rating-explanation.png&quot; alt=&quot;Tooltip to explain ratings&quot;&gt;&lt;/div&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;p class=&quot;meta text-center&quot; style=&quot;margin-top: 28px&quot;&gt;Some changes to the app from our most recent rounds of testing&lt;/p&gt;
+
+
+&lt;h1&gt;Take Away?&lt;/h1&gt;
+
+&lt;p&gt;Knowing what we know now, the price for testing wouldn&#39;t deter us. Our first test with three users would have run us ~$150 at the introductory rate. Even if they were full price, the test results easily paid for themselves with the time and effort we saved, especially for our developer who is doing 90% of the work. We would recommend, at a minimum, running tests (even small ones) at three points:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;When you have your first working build&lt;/li&gt;
+&lt;li&gt;In the middle of the project after implementing changes&lt;/li&gt;
+&lt;li&gt;At the end while polishing the app.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;We barely scratched the surface of what UserTesting has to offer. They have an ever expanding menu of services, great support, and a truly rich and vibrant culture that we were able to witness first hand while visiting their Mountain View office.&lt;/p&gt;
+
+&lt;p&gt;p.s. If you&#39;re interested, here are the full UserTesting videos we received this round. Enjoy!&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/161696182?color=ffffff&amp;title=1&amp;byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;563&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/161696181?color=ffffff&amp;title=1&amp;byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;563&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/161696179?color=ffffff&amp;title=1&amp;byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;563&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 22 Apr 2016 00:00:00 -0600</pubDate>
+        <link>http://appdocumentary.com/2016/04/22/the-app-behind-app---part-3/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2016/04/22/the-app-behind-app---part-3/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>KS Update - June</title>
+        <description>&lt;p&gt;Read it &lt;a href=&quot;https://www.kickstarter.com/projects/appdocu/app-the-human-story/posts/1534824&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 Apr 2016 00:00:00 -0600</pubDate>
+        <link>http://appdocumentary.com/2016/04/12/kickstarter-update-june/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2016/04/12/kickstarter-update-june/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The App Behind App - Part 2</title>
+        <description>&lt;p&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 750 422&quot; class=&quot;animated&quot;&gt;&lt;path class=&quot;st0&quot; d=&quot;M623.8,111.7l8.2,177.9c-1.2,17.6-13.1,33.3-31.1,34.2l-237.3,13.4l-190,10.9c-18.5,2.1-36.3-12.6-37.4-25.7  l-16.4-189.7c-1.4-16.5,11.2-30.8,27.7-31.4c0,0,115.1-4,160.6-6.2c45.5-2.2,128.9-5,128.9-5l1.6-0.6l32.8-1.3l2,0.5l8.2-0.3  l1.9-1.2l32.6-1.3l2,1.1l23.2-0.9l1.6-1.2l16.8-0.7l1.7,1.1l32.2-1.3C609.5,83.2,623,95.7,623.8,111.7z&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M123.1,116.2c0,0-5.5,5.3-5.1,21.5c0.2,7.3,8.6,118.4,13.4,178.5c1.7,21.2,19.9,37.1,41.1,36  c0,0,152.1-9.5,220.7-11.9S601,329,601,329c17.4-0.9,31-15.3,31-32.8l-0.1-7.2&quot;&gt;&lt;/path&gt;&lt;polygon class=&quot;st0&quot; points=&quot;567,94.3 178.8,111.4 196.6,335.5 576.2,314.5 &quot;&gt;&lt;/polygon&gt;&lt;path class=&quot;st0&quot; d=&quot;M368.3,326&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M354,103.8&quot;&gt;&lt;/path&gt;&lt;line class=&quot;st0&quot; x1=&quot;568.2&quot; y1=&quot;122.3&quot; x2=&quot;180.8&quot; y2=&quot;140.1&quot;&gt;&lt;/line&gt;&lt;path class=&quot;st0&quot; d=&quot;M194.9,313.4&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M575.4,294.6&quot;&gt;&lt;/path&gt;&lt;line class=&quot;st0&quot; x1=&quot;307.8&quot; y1=&quot;105.9&quot; x2=&quot;320.9&quot; y2=&quot;300.6&quot;&gt;&lt;/line&gt;&lt;path class=&quot;st0&quot; d=&quot;M353.1,298.5&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M340.1,103.8&quot;&gt;&lt;/path&gt;&lt;line class=&quot;st0&quot; x1=&quot;555.7&quot; y1=&quot;296.2&quot; x2=&quot;556.1&quot; y2=&quot;306.6&quot;&gt;&lt;/line&gt;&lt;line class=&quot;st0&quot; x1=&quot;561.5&quot; y1=&quot;295.8&quot; x2=&quot;561.9&quot; y2=&quot;306.2&quot;&gt;&lt;/line&gt;&lt;line class=&quot;st0&quot; x1=&quot;575&quot; y1=&quot;287.8&quot; x2=&quot;194.5&quot; y2=&quot;306.5&quot;&gt;&lt;/line&gt;&lt;line class=&quot;st0&quot; x1=&quot;438.6&quot; y1=&quot;99.3&quot; x2=&quot;448.6&quot; y2=&quot;293.4&quot;&gt;&lt;/line&gt;&lt;path class=&quot;st0&quot; d=&quot;M476.6,293.4&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M466.5,99.3&quot;&gt;&lt;/path&gt;&lt;line class=&quot;st0&quot; x1=&quot;427.2&quot; y1=&quot;295&quot; x2=&quot;428.6&quot; y2=&quot;322.1&quot;&gt;&lt;/line&gt;&lt;polygon class=&quot;st1&quot; points=&quot;208.9,125.5 208.3,117.7 279.7,114.7 280.7,128 202.9,131.1 &quot;&gt;&lt;/polygon&gt;&lt;polygon class=&quot;st1&quot; points=&quot;232.6,320.4 231.9,312.2 353,306.4 354,319.8 226.5,326.8 &quot;&gt;&lt;/polygon&gt;&lt;polygon class=&quot;st1&quot; points=&quot;342.9,119.8 342.5,111.9 413.9,108.9 414.6,122.3 336.8,125.4 &quot;&gt;&lt;/polygon&gt;&lt;polygon class=&quot;st1&quot; points=&quot;346.2,221.9 345.1,202.3 416.5,199.3 417.9,224.4 340.1,227.8 &quot;&gt;&lt;/polygon&gt;&lt;polygon class=&quot;st1&quot; points=&quot;469.1,114 468.7,106.1 540.2,103.1 540.8,116.5 463,119.6 &quot;&gt;&lt;/polygon&gt;&lt;/svg&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the second part of a three-part series about our app Quantify that we created to help us make our first feature documentary. This behind-the-scenes is possible by a partnership with the great people at &lt;a href=&quot;https://www.usertesting.com&quot;&gt;UserTesting&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;*To catch up and to get more insight into the app, check out our &lt;a href=&quot;/2015/12/29/the-app-behind-app---part-1/&quot;&gt;last post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Progress&lt;/h2&gt;
+
+&lt;p&gt;Just a few weeks ago, our developer Ryan Newsome got us to the point of releasing our first public beta. This was a big step and was super exciting, as we decided to fundamentally re-work Quantify back in October, and it was great to finally be able to interact with our new UI paradigms.&lt;/p&gt;
+
+&lt;p&gt;We rolled out the beta to about 25 people—or at least we thought we did. As most of you know, beta testing apps for iOS is not for the faint of heart. We had a miss-fired launch that left some testers with an excited email about the beta, but no build on their device. We realized it after a few quiet days, but it&#39;s hard to believe that we&#39;re 8 years into the launch of the App store and the process is still this brutal.&lt;/p&gt;
+
+&lt;p&gt;So far, about 10 of our testers have installed and launched the app. We feel like we&#39;re up and running now. One key thing that we&#39;ve noticed with our beta testers is that although they really like the app, getting feedback from them only happens when we hit them up individually and we&#39;re still trying to get a film out the door that we can be proud of.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/app-behind-app-part-2/texts-1.0.jpg&quot; alt=&quot;Text from Wes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So that was our dilemma. Our beta testers have really great insights but it&#39;s going to take some amount of time to get those insights from them. We&#39;re short on time and really wanting to move the app forward because there is a good chance it might be our best bet at keeping food on the table as we continue to edit the film.&lt;/p&gt;
+
+&lt;h2&gt;UserTesting Saves the Day&lt;/h2&gt;
+
+&lt;p&gt;With no time and in need of feedback to move Quantify forward we put up a 3 person test on UserTesting last night.  Our test was limited to people who shoot or edit video as part of their profession, so it was a very niche tester we needed...and within an hour we had our first completed test. Within the second hour we had our 2nd and 3rd test!&lt;/p&gt;
+
+&lt;p&gt;This morning we reviewed the tests and were able to get some modified design images to Ryan so he can start implementing them while we get back to work.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/app-behind-app-part-2/3x-updates-1.0.jpg&quot; alt=&quot;Design updates&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;meta text-center&quot;&gt;Some of the changes coming to the app because of testing&lt;/p&gt;
+
+
+&lt;p&gt;After reading our last post, Marc Edwards from Bjango (and the designer of Quantify) mentioned that we should consider Quantify&#39;ing the next set of user videos. We loved the idea, but when we went to do this we came across some rad features already built into UserTesting.&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/155427084?byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;422&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;One other feature we came across was the ability to save favorite testers. This guy DarkBulb did such a great job for us that we definitely want him involved in future builds. Check out his highlight reel below. Also, we had a video professional who wasn&#39;t quite convinced. We want to revisit with him when we&#39;re closer to launch to see if he can catch the vision of Quantify saving him hours a week.&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/155417756?title=1&amp;byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;563&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Our big take away from this round of testing was the need for context within the app. In the App Store, and in our marketing, we can supply a lot of context for what Quantify does, but we&#39;ve discovered that it&#39;s key to make that context abundantly clear in the app as well. People don&#39;t tolerate needing to put a lot of discovery into a new app, so helping them quickly catch the vision of Quantify saving them lots of hours is essential to creating regular users.&lt;/p&gt;
+
+&lt;h2&gt;Quick Tip&lt;/h2&gt;
+
+&lt;p&gt;Tip for making tests: keep tasks super simple and concise. We&#39;ve understandably confused some testers with long questions.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Feb 2016 00:00:00 -0700</pubDate>
+        <link>http://appdocumentary.com/2016/02/15/the-app-behind-app---part-2/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2016/02/15/the-app-behind-app---part-2/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The App Behind App - Part 1</title>
+        <description>&lt;p&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 750 422&quot; class=&quot;animated&quot;&gt;&lt;path class=&quot;st0&quot; d=&quot;M623.8,111.7l8.2,177.9c-1.2,17.6-13.1,33.3-31.1,34.2l-237.3,13.4l-190,10.9c-18.5,2.1-36.3-12.6-37.4-25.7  l-16.4-189.7c-1.4-16.5,11.2-30.8,27.7-31.4c0,0,115.1-4,160.6-6.2c45.5-2.2,128.9-5,128.9-5l1.6-0.6l32.8-1.3l2,0.5l8.2-0.3  l1.9-1.2l32.6-1.3l2,1.1l23.2-0.9l1.6-1.2l16.8-0.7l1.7,1.1l32.2-1.3C609.5,83.2,623,95.7,623.8,111.7z&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M123.1,116.2c0,0-5.5,5.3-5.1,21.5c0.2,7.3,8.6,118.4,13.4,178.5c1.7,21.2,19.9,37.1,41.1,36  c0,0,152.1-9.5,220.7-11.9S601,329,601,329c17.4-0.9,31-15.3,31-32.8l-0.1-7.2&quot;&gt;&lt;/path&gt;&lt;polygon class=&quot;st0&quot; points=&quot;567,94.3 178.8,111.4 196.6,335.5 576.2,314.5 &quot;&gt;&lt;/polygon&gt;&lt;path class=&quot;st0&quot; d=&quot;M368.3,326&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M354,103.8&quot;&gt;&lt;/path&gt;&lt;line class=&quot;st0&quot; x1=&quot;568.2&quot; y1=&quot;122.3&quot; x2=&quot;180.8&quot; y2=&quot;140.1&quot;&gt;&lt;/line&gt;&lt;path class=&quot;st0&quot; d=&quot;M194.9,313.4&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M575.4,294.6&quot;&gt;&lt;/path&gt;&lt;line class=&quot;st0&quot; x1=&quot;307.8&quot; y1=&quot;105.9&quot; x2=&quot;320.9&quot; y2=&quot;300.6&quot;&gt;&lt;/line&gt;&lt;path class=&quot;st0&quot; d=&quot;M353.1,298.5&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M340.1,103.8&quot;&gt;&lt;/path&gt;&lt;line class=&quot;st0&quot; x1=&quot;555.7&quot; y1=&quot;296.2&quot; x2=&quot;556.1&quot; y2=&quot;306.6&quot;&gt;&lt;/line&gt;&lt;line class=&quot;st0&quot; x1=&quot;561.5&quot; y1=&quot;295.8&quot; x2=&quot;561.9&quot; y2=&quot;306.2&quot;&gt;&lt;/line&gt;&lt;line class=&quot;st0&quot; x1=&quot;575&quot; y1=&quot;287.8&quot; x2=&quot;194.5&quot; y2=&quot;306.5&quot;&gt;&lt;/line&gt;&lt;line class=&quot;st0&quot; x1=&quot;438.6&quot; y1=&quot;99.3&quot; x2=&quot;448.6&quot; y2=&quot;293.4&quot;&gt;&lt;/line&gt;&lt;path class=&quot;st0&quot; d=&quot;M476.6,293.4&quot;&gt;&lt;/path&gt;&lt;path class=&quot;st0&quot; d=&quot;M466.5,99.3&quot;&gt;&lt;/path&gt;&lt;line class=&quot;st0&quot; x1=&quot;427.2&quot; y1=&quot;295&quot; x2=&quot;428.6&quot; y2=&quot;322.1&quot;&gt;&lt;/line&gt;&lt;polygon class=&quot;st1&quot; points=&quot;208.9,125.5 208.3,117.7 279.7,114.7 280.7,128 202.9,131.1 &quot;&gt;&lt;/polygon&gt;&lt;polygon class=&quot;st1&quot; points=&quot;232.6,320.4 231.9,312.2 353,306.4 354,319.8 226.5,326.8 &quot;&gt;&lt;/polygon&gt;&lt;polygon class=&quot;st1&quot; points=&quot;342.9,119.8 342.5,111.9 413.9,108.9 414.6,122.3 336.8,125.4 &quot;&gt;&lt;/polygon&gt;&lt;polygon class=&quot;st1&quot; points=&quot;346.2,221.9 345.1,202.3 416.5,199.3 417.9,224.4 340.1,227.8 &quot;&gt;&lt;/polygon&gt;&lt;polygon class=&quot;st1&quot; points=&quot;469.1,114 468.7,106.1 540.2,103.1 540.8,116.5 463,119.6 &quot;&gt;&lt;/polygon&gt;&lt;/svg&gt;&lt;/p&gt;
+
+&lt;p&gt;If you&#39;ve been following the progress of the film to any degree, there is a chance you&#39;ve heard us mention that we made a little tool to help with the filmmaking process. One of our sponsors, &lt;a href=&quot;http://www.usertesting.com&quot;&gt;UserTesting&lt;/a&gt;, loved the idea that the filmmakers behind a doc about apps were discovering what it took to create an app themselves. So they teamed up with us to bring you a little of the behind the scenes journey of the app behind App.&lt;/p&gt;
+
+&lt;h2&gt;Quantify - Rate Time in Realtime&lt;/h2&gt;
+
+&lt;p&gt;One of the fun things about working on a film about apps and their creators is that you&#39;re constantly reminded of the possibilities afforded when, in your pocket, is a tool that can be shaped into almost any other tool. Pair that with one of software&#39;s most endearing qualities—if you solve a problem for yourself, your work can solve it for others—and we couldn&#39;t resist making Quantify (what we&#39;re calling our little app).&lt;/p&gt;
+
+&lt;p&gt;Quantify, put simply, lets us rate time in realtime.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/app-behind-app/quantify-timeline.gif&quot; alt=&quot;Quantify Timeline&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As most app ideas do, Quantify came from a problem. As we began shooting interviews, we quickly realized that some simple timestamp data could save us a ton of time, if only we could capture it. We made a quick mockup and ran the idea by our friend, Ryan Newsome, who took a quick look and sent us a working beta after just a few hours of development.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/app-behind-app/ut-early-design-1.0.gif&quot; alt=&quot;Quantify Early Mockup&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We used this tool (long before it was called Quantify) to shoot many of the 46 interviews we&#39;ve shot for the film. We used it while interviewing the immensely talented Marc Edwards. He noticed the app (in its terribly ugly, then prototype state) and offered to hook us up with a design. We did not turn him down.&lt;/p&gt;
+
+&lt;p&gt;Marc&#39;s design was everything you hope for in a great app: intuitive, elegant, and fun. With a new look, we could share this tool publicly without being embarrassed.  We teamed up with Ryan again to bring the design to life, and Quantify was born.&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/150189662?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;422&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;h2&gt;Enter UserTesting&lt;/h2&gt;
+
+&lt;p&gt;UserTesting invited us to use their testing service with the instructions &quot;kick the tires, run tests, and share what you think, good or bad&quot;. Those were terms we could get behind, so we jumped on it.&lt;/p&gt;
+
+&lt;p&gt;UserTesting has thousands of testers that can be filtered down in all sorts of ways to reach your target market. Then you get videos of real people speaking their thoughts as they use your app. You can assign tasks and ask questions to see how easy it is to use your app, website, or prototype.&lt;/p&gt;
+
+&lt;p&gt;Though we had a lot of test credits available to us, we thought it might be a more valuable experiment if we approached the tests in the way an indie dev with little to no budget would. With that in mind, we started out with only three tests.&lt;/p&gt;
+
+&lt;p&gt;The process of setting up the tests was quick (around a half hour), and gave us a lot of freedom too.&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/150294474?&#39; width=&#39;750&#39; height=&#39;422&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;The tests we got back were so insightful. They confirmed something we had been wondering about: adding voice recording. At the time, Quantify was a niche app designed for the needs of filmmakers. With voice recording, Quantify could become a useful tool to way more people.&lt;/p&gt;
+
+&lt;p&gt;At $49.99 a piece, these tests are not cheap, but contrast that with the value of the insight that we got back and it feels like a steal. Since we&#39;re not iOS developers, essentially we &quot;paid&quot; the equivalent of one hour of development time to get 45 minutes of real world insight from potential users; insight that fundamentally changed our product road map. We were stoked.&lt;/p&gt;
+
+&lt;h2&gt;What&#39;s Next&lt;/h2&gt;
+
+&lt;p&gt;While we spend our day-to-day moving App forward, Ryan is getting closer to releasing an updated build that we&#39;re going to take back and run more user tests on. We&#39;ll be sure to let you know how it goes.&lt;/p&gt;
+
+&lt;p&gt;Want to see Quantify evolve first-hand? &lt;a href=&quot;mailto:co@storyandpixel.com&quot;&gt;Contact us&lt;/a&gt; to join the Quantify beta.&lt;/p&gt;
+
+&lt;p&gt;p.s. If you&#39;re interested, here are the full UserTesting videos we received. Enjoy!&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/150214567?title=1&amp;byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;563&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/150214568?title=1&amp;byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;563&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;
+  &lt;iframe src=&#39;https://player.vimeo.com/video/150214592?title=1&amp;byline=0&amp;portrait=0&#39; width=&#39;750&#39; height=&#39;563&#39; frameborder=&#39;0&#39; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 29 Dec 2015 00:00:00 -0700</pubDate>
+        <link>http://appdocumentary.com/2015/12/29/the-app-behind-app---part-1/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2015/12/29/the-app-behind-app---part-1/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>T-Shirt Orders are Open for the Next Week</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/t-shirt-designs.jpg&quot; alt=&quot;T-Shirt Designs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;App t-shirt orders are now open for the next week (until midnight PST, Nov 26th)! We even updated our much loved Icon shirt. Visit our &lt;a href=&quot;http://buy.appdocumentary.com/&quot;&gt;store&lt;/a&gt; to pick yours up.&lt;/p&gt;
+
+&lt;p class=&quot;meta&quot;&gt;Hint. Join our neglectfully infrequent mailing list for 15% off.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;
+  &lt;form action=&quot;http://appdocumentary.us7.list-manage2.com/subscribe/post?u=654b70dc4fd0125dcb269ac96&amp;amp;id=7cf4167207&quot; class=&quot;email-form&quot; method=&quot;post&quot; name=&quot;mc-embedded-subscribe-form&quot; role=&quot;form&quot;&gt;
+  &lt;div class=&quot;input-group&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;EMAIL&quot; class=&quot;form-control input-sm&quot; placeholder=&quot;Enter email for updates.&quot;&gt;
+    &lt;span class=&quot;input-group-btn&quot;&gt;
+      &lt;button type=&quot;submit&quot; class=&quot;btn-sm btn btn-default&quot;&gt;Submit&lt;/button&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+
+  &lt;p class=&quot;muted&quot;&gt;No spam, ever. Emails are never shared.&lt;/p&gt;
+&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 19 Nov 2015 00:00:00 -0700</pubDate>
+        <link>http://appdocumentary.com/2015/11/19/t-shirt-orders-open-for-the-next-week/</link>
+        <guid isPermaLink="true">http://appdocumentary.com/2015/11/19/t-shirt-orders-open-for-the-next-week/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
