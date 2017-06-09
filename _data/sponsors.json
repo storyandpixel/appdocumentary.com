@@ -94,6 +94,15 @@
       "logo": "thebestcaesar.com.svg",
       "placeholder": "best-caesar-video-placeholder-2.0.jpg",
       "embed": "<iframe src='//player.vimeo.com/video/144767383?title=0&amp;byline=0&amp;portrait=0&amp;color=FFFFFF;autoplay=1' class='embed-responsive-item' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+    },
+    {
+      "name": "Paddle",
+      "link": "https://paddle.com/",
+      "bg": "#954186",
+      "tagline": "Spend time building, not billing.",
+      "logo": "paddle.com.png",
+      "placeholder": "paddle-video-placeholder-1.0.png",
+      "embed": "<iframe src='https://www.youtube.com/embed/Numqa6lZZOM?autoplay=1' frameborder='0' allowfullscreen></iframe>"
     }
   ],
   "logo_sponsors": [
