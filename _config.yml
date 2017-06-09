@@ -7,7 +7,7 @@ host: 0.0.0.0
 url: "http://appdocumentary.com"
 twitter_username: appdocu
 exclude: ['Gemfile']
-include: ['_data']
+include: ['_data', '.nojekyll']
 assets:
   css_compressor: sass
 
