@@ -113,7 +113,7 @@
     });
     $('#home-video-play-button').magnificPopup({
       items: {
-        src: 'https://vimeo.com/106228915'
+        src: 'https://vimeo.com/241264857'
       },
       type: 'iframe'
     });
