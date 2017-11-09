@@ -4,9 +4,13 @@ title: Los Angeles Premiere Nov 16th
 author: Jake
 ---
 
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//player.vimeo.com/video/241264857?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
 The Los Angles Premiere of App: The Human Story comes to the beautiful Art Theatre in Long Beach's historic Retro Row, Thursday, Nov 16th, at 7:30 pm.
 
-This feature length documentary gives a voice to the passionate community of indie app developers. App: The Human Story is a look at the coming of age of an all new art form. See the [trailer here](https://vimeo.com/241264857).
+This feature length documentary gives a voice to the passionate community of indie app developers. App: The Human Story is a look at the coming of age of an all new art form.
 
 With the launch of the iPhone and subsequent devices, developers found themselves with a worldwide market hungry for their innovations: apps.
 
