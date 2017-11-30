@@ -1,57 +1,235 @@
 {
-  "founders": [
+  "row1": [
     {
       "name": "Jake Schumacher",
-      "title": "Director & Executive Producer",
+      "credits": ["Director", "Editor", "Cinematographer", "Executive Producer"],
       "link": "https://twitter.com/prevailingcity",
       "image": "/images/jake-schumacher.jpg",
       "blurb": "Whether it’s in woodworking or digital creation, Jake is passionate about ideas that will outlive him. Paired with his fascination for story, humanity, and technology, Jake is always coming up with terrible ideas just to make room for the truly brilliant ones.<br><br>Jake shares the overall creative direction, preproduction, shooting, editing, design, and vfx/mfx work with Jedidiah and covers the majority of the writing for the project."
     },
     {
       "name": "Jedidiah Hurt",
-      "title": "Director & Executive Producer",
+      "credits": ["Co-Director", "Executive Producer", "Add'l Cinematography", "Assistant Editor"],
       "link": "https://twitter.com/jedhurt",
       "image": "/images/jedidiah-hurt.jpg",
       "blurb": "A habitual and thoughtful creator, Jedidiah’s attention to detail and his eye for excellence have served him well—whether he’s designing and developing web apps for large national corporations or launching an indie production company to make an important documentary.<br><br>Jedidiah shares the overall creative direction, preproduction, shooting, editing, design, and vfx/mfx work with Jake and covers all the development for the project."
     },
     {
       "name": "Adam Lisagor",
-      "title": "Executive Producer",
+      "credits": ["Executive Producer"],
       "link": "https://twitter.com/lonelysandwich",
       "image": "/images/adam-lisagor.jpg",
       "blurb": "With a passion for story, detail and timing, Adam has paired his deep love of technology with amazing video abilities, making Sandwich Video the premiere production company for tech companies to introduce their wares.<br><br>As he did with commercial production, Adam fell into his role as Executive Producer by accident. As a friend and mentor of Jake’s, he was kind enough to give Jedidiah and Jake insightful feedback during the early stages of the project. And now they keep coming back for more. His insight in all things video and story-related is invaluable, much like his time is quickly becoming. You’ve seen him on tv, right?"
     }
   ],
-  "crew": [
+  "row2": [
     {
       "name": "Dave Morin",
-      "title": "Executive Producer",
+      "credits": ["Executive Producer"],
       "link": "https://twitter.com/davemorin",
       "image": "/images/dave-morin.jpg",
       "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
     },
     {
       "name": "Don &amp; Darcy Schumacher",
-      "title": "Executive Producer",
+      "credits": ["Executive Producer"],
       "link": "https://www.facebook.com/darcy.schumacher",
       "image": "/images/don-darcy-schumacher.jpg",
       "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
     },
     {
       "name": "Greg Stikeleather",
-      "title": "Executive Producer",
+      "credits": ["Executive Producer"],
       "link": "https://www.linkedin.com/pub/greg-stikeleather/0/b62/626",
       "image": "/images/greg-stikeleather.jpg",
       "blurb": "As a serial entrepreneur, Greg has founded and run companies acquired by Microsoft and Netscape, been a managing partner at a San Francisco venture capital firm and run the first usability testing lab for Apple while they created the first commercial graphical interface."
     }
   ],
-  "post_production": [
+  "row3": [
+    {
+      "name": "Gregory Bayne",
+      "credits": ["Consulting Producer"],
+      "link": "https://twitter.com/gregorybayne",
+      "image": "/images/cast/placeholder.png",
+      "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
+    },
+    {
+      "name": "Jay Dysart",
+      "credits": ["Consulting Producer"],
+      "link": "https://twitter.com/hookjd",
+      "image": "/images/cast/placeholder.png",
+      "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
+    },
     {
       "name": "Enoch Kim",
-      "title": "Musical Score",
+      "credits": ["Composer", "Sounder Mixer"],
       "link": "https://twitter.com/themusemaker",
       "image": "/images/enoch-kim.jpg",
-      "blurb": "Enoch Kim is a musician and a composer who loves telling stories through music."
+      "blurb": "As a serial entrepreneur, Greg has founded and run companies acquired by Microsoft and Netscape, been a managing partner at a San Francisco venture capital firm and run the first usability testing lab for Apple while they created the first commercial graphical interface."
     }
+  ],
+  "row4": [
+    {
+      "name": "Steven Frank",
+      "credits": [],
+      "link": "https://twitter.com/stevenf",
+      "image": "/images/cast/placeholder.png",
+      "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
+    },
+    {
+      "name": "Melissa Hargis",
+      "credits": [],
+      "link": "https://twitter.com/var_meltastic",
+      "image": "/images/cast/placeholder.png",
+      "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
+    },
+    {
+      "name": "Nicki Klein",
+      "credits": [],
+      "link": "https://twitter.com/nicki_23",
+      "image": "/images/cast/placeholder.png",
+      "blurb": "As a serial entrepreneur, Greg has founded and run companies acquired by Microsoft and Netscape, been a managing partner at a San Francisco venture capital firm and run the first usability testing lab for Apple while they created the first commercial graphical interface."
+    }
+  ],
+  "row5": [
+    {
+      "name": "Cabel Sasser",
+      "credits": [],
+      "link": "https://twitter.com/cabel",
+      "image": "/images/cast/placeholder.png",
+      "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
+    },
+    {
+      "name": "Ish Shabazz",
+      "credits": [],
+      "link": "https://www.facebook.com/ishabazz",
+      "image": "/images/cast/placeholder.png",
+      "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
+    },
+    {
+      "name": "Brent Simmons",
+      "credits": [],
+      "link": "https://twitter.com/brentsimmons",
+      "image": "/images/cast/placeholder.png",
+      "blurb": "As a serial entrepreneur, Greg has founded and run companies acquired by Microsoft and Netscape, been a managing partner at a San Francisco venture capital firm and run the first usability testing lab for Apple while they created the first commercial graphical interface."
+    }
+  ],
+  "row6": [
+    {
+      "name": "Loni Schumacher",
+      "credits": ["Assistant Editor"],
+      "link": "https://twitter.com/lonischumacher",
+      "image": "/images/cast/placeholder.png",
+      "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
+    },
+    {
+      "name": "Wes Reel",
+      "credits": ["Add'l Cinematography"],
+      "link": "#",
+      "image": "/images/cast/wes.jpg",
+      "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
+    },
+    {
+      "name": "Jacob Perry",
+      "credits": ["Add'l Cinematography"],
+      "link": "#",
+      "image": "/images/cast/placeholder.png"
+    }
+  ],
+  "row7": [
+    {
+      "name": "Charles Davis Jr.",
+      "credits": ["Visual Effects"],
+      "link": "#",
+      "image": "/images/cast/CharlesDavisJr-Profile.jpg"
+    },
+    {
+      "name": "Garrett Smith",
+      "credits": ["Colorist"],
+      "link": "#",
+      "image": "/images/cast/placeholder.png"
+    },
+    {
+      "name": "Chris Stevens",
+      "credits": ["Computer Architect"],
+      "link": "#",
+      "image": "/images/cast/placeholder.png"
+    }
+  ],
+  "row8": [
+    {
+      "name": "Benjamin Lebeau",
+      "credits": ["Trailer Editor"],
+      "link": "https://twitter.com/benjamin_lebeau",
+      "image": "/images/cast/ben.jpg"
+    }
+  ],
+  "featuring": [
+    "Adam Lisagor",
+    "Matías Duarte",
+    "John Gruber",
+    "Ken Wong",
+    "Marco Arment",
+    "Jay Dysart",
+    "Windy Chien",
+    "Jason Snell",
+    "Pasquale D’Silva",
+    "Jake Lodwick",
+    "Douglas Rushkoff",
+    "Ashley Nelson-Hornstein",
+    "Scott Snibbe"
+  ],
+  "appearing_or_interviewed": [
+    "Stephan Ango",
+    "Steven Aquino",
+    "Ashur Cabrera",
+    "Sara Inés Calderon",
+    "Logan Collins",
+    "Jordan Beck",
+    "Heather Buletti",
+    "Tyson Caly",
+    "Jessie Char",
+    "John Choi",
+    "Sebastiaan de With",
+    "Genie Donaghy",
+    "Ella Donaghy",
+    "Layton Duncan",
+    "Marc Edwards",
+    "Scott Forstall",
+    "Patrick Gibson",
+    "Dan Gray",
+    "Boris Gundelach",
+    "Craig Hockenberry",
+    "Russell Ivanovic",
+    "Steve Jobs",
+    "Björn Jeffery",
+    "Paul Kafasis",
+    "Jake Lodwick",
+    "Jean MacDonald",
+    "Greg Maletic",
+    "James Moore",
+    "Neven Mrgan",
+    "Christa Mrgan",
+    "Josh Nesbit",
+    "Ryan Newsome",
+    "Grey Osten",
+    "Sce Pike",
+    "Eliot Rausch",
+    "Walt Rivenbark",
+    "Oliver Rodriguez",
+    "Saren Sakurai",
+    "Losi Samuelu",
+    "Laura Savino",
+    "Joby Sasser",
+    "Andrea Shabaz",
+    "Arrielle Shabaz",
+    "Bryanna Shabaz",
+    "Maya Shabaz",
+    "Mitch Simonot",
+    "Chris Stevens",
+    "Greg Stratford",
+    "Mina Tadrous",
+    "Colleen Wainwright",
+    "Claude Zeins"
   ]
 }
