@@ -50,19 +50,19 @@
       "name": "Gregory Bayne",
       "credits": ["Consulting Producer"],
       "link": "https://twitter.com/gregorybayne",
-      "image": "/images/cast/placeholder.png",
+      "image": "/images/cast/gregory.jpg",
       "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
     },
     {
       "name": "Jay Dysart",
       "credits": ["Consulting Producer"],
       "link": "https://twitter.com/hookjd",
-      "image": "/images/cast/placeholder.png",
+      "image": "/images/cast/jay.jpg",
       "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
     },
     {
       "name": "Enoch Kim",
-      "credits": ["Composer", "Sounder Mixer"],
+      "credits": ["Composer", "Sound Mixer"],
       "link": "https://twitter.com/themusemaker",
       "image": "/images/enoch-kim.jpg",
       "blurb": "As a serial entrepreneur, Greg has founded and run companies acquired by Microsoft and Netscape, been a managing partner at a San Francisco venture capital firm and run the first usability testing lab for Apple while they created the first commercial graphical interface."
@@ -73,21 +73,21 @@
       "name": "Steven Frank",
       "credits": [],
       "link": "https://twitter.com/stevenf",
-      "image": "/images/cast/placeholder.png",
+      "image": "/images/cast/steven.jpg",
       "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
     },
     {
       "name": "Melissa Hargis",
       "credits": [],
       "link": "https://twitter.com/var_meltastic",
-      "image": "/images/cast/placeholder.png",
+      "image": "/images/cast/melissa-1.jpg",
       "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
     },
     {
       "name": "Nicki Klein",
       "credits": [],
       "link": "https://twitter.com/nicki_23",
-      "image": "/images/cast/placeholder.png",
+      "image": "/images/cast/nicki.jpg",
       "blurb": "As a serial entrepreneur, Greg has founded and run companies acquired by Microsoft and Netscape, been a managing partner at a San Francisco venture capital firm and run the first usability testing lab for Apple while they created the first commercial graphical interface."
     }
   ],
@@ -96,21 +96,21 @@
       "name": "Cabel Sasser",
       "credits": [],
       "link": "https://twitter.com/cabel",
-      "image": "/images/cast/placeholder.png",
+      "image": "/images/cast/cabel-4.jpg",
       "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
     },
     {
       "name": "Ish Shabazz",
       "credits": [],
       "link": "https://www.facebook.com/ishabazz",
-      "image": "/images/cast/placeholder.png",
+      "image": "/images/cast/ish.jpg",
       "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
     },
     {
       "name": "Brent Simmons",
       "credits": [],
       "link": "https://twitter.com/brentsimmons",
-      "image": "/images/cast/placeholder.png",
+      "image": "/images/cast/brent-2.jpg",
       "blurb": "As a serial entrepreneur, Greg has founded and run companies acquired by Microsoft and Netscape, been a managing partner at a San Francisco venture capital firm and run the first usability testing lab for Apple while they created the first commercial graphical interface."
     }
   ],
@@ -119,7 +119,7 @@
       "name": "Loni Schumacher",
       "credits": ["Assistant Editor"],
       "link": "https://twitter.com/lonischumacher",
-      "image": "/images/cast/placeholder.png",
+      "image": "/images/cast/loni.jpg",
       "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
     },
     {
@@ -133,7 +133,7 @@
       "name": "Jacob Perry",
       "credits": ["Add'l Cinematography"],
       "link": "#",
-      "image": "/images/cast/placeholder.png"
+      "image": "/images/cast/jacob.jpg"
     }
   ],
   "row7": [
@@ -147,13 +147,13 @@
       "name": "Garrett Smith",
       "credits": ["Colorist"],
       "link": "#",
-      "image": "/images/cast/placeholder.png"
+      "image": "/images/cast/garrett.jpg"
     },
     {
       "name": "Chris Stevens",
       "credits": ["Computer Architect"],
       "link": "#",
-      "image": "/images/cast/placeholder.png"
+      "image": "/images/cast/chris.jpg"
     }
   ],
   "row8": [
