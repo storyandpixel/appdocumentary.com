@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="section-header">{{ include.heading }}</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 cast-name-list">
+    {% for cast_member in include.cast_members %}
+      <h2>{{ cast_member }}</h2>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="person-row row">
+  {% for cast_member in include.cast_members %}
+    <div class="person col-md-4 col-sm-12">
+      {% for credit in cast_member.credits %}
+      <h2 class="credit">
+          {{ credit }}
+      </h2>
+      {% endfor %}
+      <a href="{{ cast_member.link }}">
+        <img class="img-responsive" src="{{ cast_member.image }}">
+      </a>
+      <h3 class="name">
+        <a href="{{ cast_member.link }}">
+          {{ cast_member.name }}
+        </a>
+      </h3>
+    </div>
+  {% endfor %}
+</div>
