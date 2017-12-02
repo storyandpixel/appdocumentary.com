@@ -1,0 +1,77 @@
+.video-placeholder {
+  cursor: pointer;
+}
+.sponsors {
+  text-align: center;
+}
+.sponsors a {
+  border: none;
+}
+.blurb {
+  text-align: left;
+}
+.sponsors .row {
+  margin-bottom: 3em;
+}
+.link-sponsors a {
+  text-decoration: none;
+  border-bottom: 1px solid #CCC;
+  line-height: 1.3em;
+}
+// .video-sponsors img {
+//   width: 100%;
+// }
+.video-sponsors h2 {
+  margin-bottom: 1em;
+}
+.video-sponsor-logo {
+  max-height: 40px;
+}
+.logo-sponsors img {
+  height: 100px;
+  max-width: 100%;
+}
+.sponsor-header {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#sponsor-badge {
+  opacity: 0;
+}
+#sponsor-badge img {
+  min-width: 200px;
+  width: 55%;
+}
+.corporate-sponsor .blurb img {
+  max-width: 66%;
+}
+.corporate-sponsor p {
+  font-size: ms(1);
+}
+.corporate-sponsor.intel .blurb img {
+  max-width: 30%;
+}
+@media (max-width: $screen-sm-min - 1) {
+  .sponsorship-contact-button, .blurb img {
+    margin-top: 1em;
+  }
+}
+.sponsorship-package {
+  color: white;
+  padding-bottom: 1em;
+}
+.sponsorship-package h1 {
+  letter-spacing: 1px;
+}
+.corporate-sponsorship-package {
+  background-color: #127CC1;
+}
+.video-sponsorship-package {
+  background-color: #00AA66;
+}
+.logo-sponsorship-package {
+  background-color: #153160;
+}
+.link-sponsorship-package {
+  background-color: #0082D5;
+}

@@ -1,0 +1,57 @@
+.jumbotron {
+  background-color: black;
+}
+.jumbotron.jumbotron-small {
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+.jumbotron p {
+  line-height: inherit;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+}
+.jumbotron.corporate-sponsor {
+  padding-bottom: 27px;
+  margin-bottom: 0;
+}
+.jumbotron.corporate-sponsor p, .jumbotron.corporate-sponsor a {
+  color: white;
+  text-shadow: none;
+}
+.jumbotron.corporate-sponsor a {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+.jumbotron.usertesting {
+  background-color: #153160;
+}
+.jumbotron.igloo {
+  background-color: #00AA66;
+}
+.jumbotron.intel {
+  background-color: #127CC1;
+}
+.jumbotron.moxtra {
+  background-color: #0082D5;
+}
+.jumbotron.praxent {
+  background-color: #5F6062;
+}
+.jumbotron.adblock {
+  background-color: #000000;
+}
+.jumbotron a {
+  padding-bottom: 3px;
+}
+.jumbotron a:hover {
+  text-decoration: none;
+}
+@media (max-width: 380px) {
+  h1, .h1 {
+    font-size: 29px;
+  }
+  .jumbotron {
+    padding: 0;
+  }
+  .jumbotron.corporate-sponsor {
+    padding-top: 15px;
+  }
+}

@@ -1,0 +1,46 @@
+.featured-sponsor {
+  display: table;
+}
+.featured-sponsor .blurb, .featured-sponsor .right {
+  display: table-cell;
+  min-height: 90px;
+  width: 100%;
+}
+.featured-sponsor .blurb {
+  padding-bottom: 13px;
+  padding-right: 10px;
+  vertical-align: middle;
+  text-align: right;
+}
+.featured-sponsor .logo {
+  box-sizing: border-box;
+  display: table;
+  float: right;
+  height: 90px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+.featured-sponsor .logo a {
+  display: table-cell;
+  vertical-align: middle;
+}
+.featured-sponsor .logo img {
+  max-height: 70px;
+  max-width: 100px;
+}
+.featured-sponsor small {
+  clear: right;
+  color: #666;
+  float: right;
+  font-size: 69%;
+  margin-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 120px;
+}
+@media (max-width: 767px) {
+  .featured-sponsor {
+    margin-top: 2em;
+  }
+}

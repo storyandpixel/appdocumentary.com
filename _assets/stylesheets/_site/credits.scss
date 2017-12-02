@@ -1,0 +1,53 @@
+@media (min-width: $screen-md-min) {
+  .credits .person-row.row {
+    display: table;
+  }
+  .person {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  .name {
+    min-height: 104px;
+  }
+  .cast-name-list {
+    -moz-column-count: 2;
+    -moz-columns: 2;
+    -webkit-columns: 2;
+    columns: 2;
+    text-align: center;
+    h2 {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+}
+
+.section-header {
+  margin-bottom: 0.6em;
+  margin-top: 1em;
+  text-align: center;
+}
+.cast-name-list {
+  padding-bottom: 2em;
+  padding-top: 2em;
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.person {
+  margin-bottom: 2em;
+}
+.credit {
+  margin-top: 0;
+}
+.person img {
+  border-radius: 2px;
+  margin-top: 2em;
+  width: 100%;
+}
+.credits.body h1 {
+  margin-bottom: 1em;
+}

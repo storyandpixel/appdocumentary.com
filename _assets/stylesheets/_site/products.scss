@@ -1,0 +1,51 @@
+.products {
+  margin-top: 11em;
+  margin-bottom: 11em;
+}
+@media (max-width: $screen-md-min - 1) {
+  .product {
+    margin-bottom: 2em;
+  }
+  .product:nth-child(odd) {
+    clear: left;
+  }
+}
+.product {
+  padding-left: 40px;
+  padding-right: 40px;
+  p { font-size: 88%; }
+}
+.product-thumbnails {
+  margin-bottom: $form-group-margin-bottom;
+  margin-top: $form-group-margin-bottom / 2;
+}
+.action-button {
+  margin-bottom: 0.5em;
+  .btn {
+    @include btn-styles($btn-default-bg);
+  }
+  .fa { margin-right: 5px }
+}
+.product-variation {
+  cursor: pointer;
+}
+.product-variant {
+  margin-top: 0;
+}
+.product-image {
+  width: 100%;
+}
+.product-display {
+  text-align: center;
+}
+.product-icon {
+  width: 95%;
+}
+@media (max-width: $screen-md-min - 1) {
+  .product-icon {
+    width: 80%;
+  }
+}
+.shirt-design img, .film-type img {
+  cursor: pointer;
+}

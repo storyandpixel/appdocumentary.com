@@ -1,0 +1,9 @@
+a, button, input, li, p, h1, h2, h3, h4 {
+  visibility: hidden;
+}
+
+.wf-active, .wf-inactive {
+  a, button, input, li, p, h1, h2, h3, h4 {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,77 @@
+$font-size-base: ms(0);
+// $line-height-base: ms(1);
+// $line-height-computed: ms(0);
+
+$font-size-small: ms(-1);
+$font-size-large: ms(1);
+
+$font-size-h1: ms(4);
+$font-size-h2: ms(3);
+$font-size-h3: ms(2);
+$font-size-h4: ms(1);
+$headings-font-weight: 300;
+
+$font-family-sans-serif: 'nudista-web', sans-serif;
+$font-family-serif: 'kulturista-web', serif;
+.blog {
+  color: #303030;
+  // font-size: ms(1);
+}
+.blog a {
+  color: black;
+}
+.archive h4 a {
+  border-bottom: 1px solid black;
+}
+.archive h4 a:hover {
+  border-bottom: 1px solid $brand-primary;
+  text-decoration: none;
+}
+.blog {
+  p, li {
+    a {
+      border-bottom: 1px solid black;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  li {
+    line-height: 28px;
+  }
+}
+// .blog p {
+//   margin-bottom: 0.7em;
+// }
+.latest a, .jumbotron a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+a.clean, a.clean:hover, .latest a {
+  color: white;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+a.clean, a.clean:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 1px;
+}
+
+a.inverse {
+  color: white;
+}
+a.img, a.navbar-brand {
+  border-bottom: none;
+}
+a.img {
+  font-weight: 300;
+  padding-bottom: 0;
+}
+body blockquote {
+  border-left: 0;
+  text-align: center;
+  p {
+    font-family: $font-family-serif;
+    font-style: italic;
+    font-weight: 300;
+  }
+}

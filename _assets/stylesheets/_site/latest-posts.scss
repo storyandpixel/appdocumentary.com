@@ -1,0 +1,33 @@
+$header-banner-post-bar-height: ms(3);
+
+.header-banner {
+  height: $header-banner-post-bar-height;
+  font-size: ms(-1);
+}
+.header-banner.latest {
+  background-color: $brand-primary;
+}
+.header-banner.vimeo {
+  background-color: #00adef;
+}
+.header-banner p {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-bottom: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.header-banner a {
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+.header-banner a:hover {
+  background-color: #FFF;
+  color: #222;
+  border-bottom: none;
+  text-shadow: none;
+  text-decoration: none;
+}
+.header-banner strong {
+  padding-right: 0.6em;
+}
