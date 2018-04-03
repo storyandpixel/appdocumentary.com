@@ -41,7 +41,7 @@ $viewport-height: 368px;
   $viewport-height: $viewport-height + 50px;
 }
 .animating {
-  #navbar, #latest, #hand-over-phone, #logo, #home-video-play-button, #tagline, #logline, #shorts, #pre-order, #footer {
+  #navbar, #latest, #hand-over-phone, #logo, #home-video-play-button, #tagline, #logline, #shorts, #footer {
     opacity: 0;
   }
 }
@@ -62,8 +62,5 @@ $viewport-height: 368px;
 }
 #logline {
   font-weight: 300;
-  position: relative;
-}
-#pre-order {
   position: relative;
 }
