@@ -7,6 +7,35 @@ $header-banner-post-bar-height: ms(3);
 .header-banner.latest {
   background-color: $brand-primary;
 }
+.header-banner.itunes {
+  background-color: #9769F7;
+  font-size: 18px;
+  height: 55px;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 0.25s ease;
+  &:hover {
+    background-color: #7D45F1;
+  }
+  a {
+    background-color: #9769F7;
+    border-bottom: none;
+    color: white;
+    display: block;
+    height: 55px;
+    margin-left: -100px;
+    margin-right: -100px;
+    text-decoration: none;
+    transition: background-color 0.25s ease;
+  }
+  a:hover {
+    color: white;
+    background-color: #7D45F1;
+  }
+  p {
+    margin-top: 13px;
+  }
+}
 .header-banner.vimeo {
   background-color: #00adef;
   font-size: 18px;
