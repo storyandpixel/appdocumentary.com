@@ -1,0 +1,80 @@
+$header-banner-post-bar-height: ms(3);
+
+.header-banner {
+  height: $header-banner-post-bar-height;
+  font-size: ms(-1);
+}
+.header-banner.latest {
+  background-color: $brand-primary;
+}
+.header-banner.vimeo {
+  background-color: #00adef;
+  font-size: 18px;
+  height: 55px;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 0.25s ease;
+  &:hover {
+    background-color: #0088cc;
+  }
+  a {
+    background-color: #00adef;
+    border-bottom: none;
+    color: white;
+    display: block;
+    height: 55px;
+    margin-left: -100px;
+    margin-right: -100px;
+    text-decoration: none;
+    transition: background-color 0.25s ease;
+  }
+  a:hover {
+    color: white;
+    background-color: #0088cc;
+  }
+  img {
+    border-bottom: none;
+    height: 18px;
+    padding-left: 1px;
+    padding-right: 0px;
+    position: relative;
+    top: -3px;
+  }
+  p {
+    margin-top: 13px;
+  }
+}
+@media (max-width: 388px) {
+  .header-banner.vimeo {
+    font-size: 14px;
+    height: 50px;
+    a {
+      height: 50px;
+    }
+    img {
+      height: 16px;
+    }
+  }
+}
+
+.header-banner p {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-bottom: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.header-banner a {
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+.header-banner a:hover {
+  background-color: #FFF;
+  color: #222;
+  border-bottom: none;
+  text-shadow: none;
+  text-decoration: none;
+}
+.header-banner strong {
+  padding-right: 0.6em;
+}
