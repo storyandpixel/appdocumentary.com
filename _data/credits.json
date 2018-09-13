@@ -123,20 +123,26 @@
       "blurb": "Dave Morin is an American entrepreneur, angel investor, and the CEO and co-founder of the social network Path. A former manager at Facebook, he co-created the Facebook Platform and Facebook Connect."
     },
     {
+      "name": "Scott Whipple",
+      "credits": ["Assistant Editor"],
+      "link": "http://Floatinghorsedesign.com",
+      "image": "/images/cast/scott-whipple.jpg",
+    },
+    {
       "name": "Wes Reel",
       "credits": ["Add'l Cinematography"],
       "link": "#",
       "image": "/images/cast/wes.jpg",
       "blurb": "Yep. Jake's mom and dad. With a deep love for the desert, golfing, and their grandchildren, Don and Darcy have been early believers in their son’s creative abilities."
     },
-    {
+  ],
+  "row7": [
+      {
       "name": "Jacob Perry",
       "credits": ["Add'l Cinematography"],
       "link": "#",
       "image": "/images/cast/jacob.jpg"
-    }
-  ],
-  "row7": [
+    },
     {
       "name": "Charles Davis Jr.",
       "credits": ["Visual Effects"],
@@ -148,15 +154,15 @@
       "credits": ["Colorist"],
       "link": "#",
       "image": "/images/cast/garrett.jpg"
-    },
-    {
+    }
+  ],
+  "row8": [
+      {
       "name": "Chris Stevens",
       "credits": ["Computer Architect"],
       "link": "#",
       "image": "/images/cast/chris.jpg"
-    }
-  ],
-  "row8": [
+    },
     {
       "name": "Benjamin Lebeau",
       "credits": ["Trailer Editor"],
