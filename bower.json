@@ -22,5 +22,8 @@
     "magnific-popup": "~1.0.0",
     "modular-scale": "~2.0.7",
     "vivus": "~0.2.3"
+  },
+  "devDependencies": {
+    "modular-scale": "^3.0.5"
   }
 }
