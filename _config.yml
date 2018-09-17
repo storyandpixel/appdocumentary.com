@@ -4,7 +4,7 @@ email: co@storyandpixel.com
 description: "App creation has become the new art form for our generation. This is the story of the cultural phenomenon that touches all our lives."
 baseurl: ""
 host: 0.0.0.0
-url: "http://appdocumentary.com"
+url: "https://appdocumentary.com"
 twitter_username: appdocu
 exclude: ['Gemfile']
 include: ['_data', '.nojekyll']
